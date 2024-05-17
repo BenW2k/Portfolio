@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./styles/pages/home.module.css";
 
 export default function Home() {
-  return <h1> Hello World </h1>;
+  return <div className={styles["hero-section"]}>Hello World</div>;
 }
