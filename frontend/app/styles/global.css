@@ -1,4 +1,17 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("/frontend//app/assets/fonts/Helvetica.ttf");
+}
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("/frontend/app/assets/fonts/helvetica-light-587ebe5a59211.ttf");
+}
 body {
+  font-family: Helvetica-Light, sans-serif;
   background-color: black;
   color: white;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
 }/*# sourceMappingURL=global.css.map */
