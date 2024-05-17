@@ -1,38 +1,34 @@
 @font-face {
-  font-family: "Helvetica";
+  font-family: Helvetica;
   src: url("/frontend//app/assets/fonts/Helvetica.ttf");
 }
-
 @font-face {
-  font-family: "Helvetica-Light";
+  font-family: var(--Helvetica-Light);
   src: url("/frontend/app/assets/fonts/helvetica-light-587ebe5a59211.ttf");
 }
-
 @font-face {
-  font-family: "Satoshi-Regular";
-  src: url("/frontend//app/assets/fonts/Satoshi-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Satoshi-Italic";
-  src: url("/frontend/app/assets/fonts/Satoshi-VariableItalic.otf");
+  font-family: Satoshi-Regular;
+  src: url("../assets/fonts/Satoshi-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: "Satoshi-Medium-Italic";
-  src: url("/frontend//app/assets/fonts/Satoshi-MediumItalic.otf");
-}
-
-@font-face {
-  font-family: "Satoshi-Medium";
-  src: url("/frontend/app/assets/fonts/Satoshi-Medium.otf");
+  font-family: Satoshi-Italic;
+  src: url("../assets/fonts/Satoshi-Italic.otf") format("opentype");
 }
 @font-face {
-  font-family: "Satoshi-Light";
-  src: url("/frontend//app/assets/fonts/Satoshi-Light.otf");
+  font-family: Satoshi-Medium-Italic;
+  src: url("../assets/fonts/Satoshi-MediumItalic.otf") format("opentype");
 }
 @font-face {
-  font-family: "Satoshi-Light-Italic";
-  src: url("/frontend/app/assets/fonts/Satoshi-LightItalic.otf");
+  font-family: Satoshi-Medium;
+  src: url("../assets/fonts/Satoshi-Medium.otf") format("opentype");
 }
-$light-font: Satoshi, sans-serif;
-$medium-font: Satoshi-Light, sans-serif;
+@font-face {
+  font-family: Satoshi-Light;
+  src: url("../assets/fonts/Satoshi-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Light-Italic;
+  src: url("../assets/fonts/Satoshi-LightItalic.otf") format("opentype");
+}
+$light-font: Satoshi-Light, sans-serif;
+$medium-font: Satoshi-Regular, sans-serif;
