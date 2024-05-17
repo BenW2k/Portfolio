@@ -8,5 +8,31 @@
   src: url("/frontend/app/assets/fonts/helvetica-light-587ebe5a59211.ttf");
 }
 
-$light-font: Helvetica-Light, sans-serif;
-$medium-font: Helvetica, sans-serif;
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("/frontend//app/assets/fonts/Satoshi-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("/frontend/app/assets/fonts/Satoshi-VariableItalic.otf");
+}
+@font-face {
+  font-family: "Satoshi-Medium-Italic";
+  src: url("/frontend//app/assets/fonts/Satoshi-MediumItalic.otf");
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/frontend/app/assets/fonts/Satoshi-Medium.otf");
+}
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("/frontend//app/assets/fonts/Satoshi-Light.otf");
+}
+@font-face {
+  font-family: "Satoshi-Light-Italic";
+  src: url("/frontend/app/assets/fonts/Satoshi-LightItalic.otf");
+}
+$light-font: Satoshi, sans-serif;
+$medium-font: Satoshi-Light, sans-serif;
