@@ -1,4 +1,15 @@
+.hero-section {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  align-items: center;
+}
+
 .hero-title {
   font-weight: 100;
   font-size: 64px;
+}
+
+.hero-paragraph {
+  font-size: 24px;
 }/*# sourceMappingURL=home.module.css.map */
