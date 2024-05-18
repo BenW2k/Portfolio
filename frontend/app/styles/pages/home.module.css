@@ -1,13 +1,16 @@
 .hero-section {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   width: auto;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-title {
   font-weight: 100;
   font-size: 64px;
+  margin: 0;
 }
 
 .hero-paragraph {
