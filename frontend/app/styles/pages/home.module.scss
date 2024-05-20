@@ -11,37 +11,38 @@
   font-weight: 100;
   font-size: 80px;
   margin: 20px;
-  animation: transitionIn 1.5s, transitionUp 1.5s;
-  animation-fill-mode: forwards;
+  opacity: 0;
+  // animation: transitionIn 1.5s, transitionUp 1.5s;
+  // animation-fill-mode: forwards;
 }
 
 .hero-paragraph {
   font-size: 24px;
   width: 33%;
   text-align: center;
-  animation: transitionIn 1.5s, transitionUp 1.5s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
+  // animation: transitionIn 1.5s, transitionUp 1.5s;
+  // animation-delay: 1.5s;
+  // animation-fill-mode: forwards;
 }
 
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: rotateX(-15deg);
-  }
+// @keyframes transitionIn {
+//   from {
+//     opacity: 0;
+//     transform: rotateX(-15deg);
+//   }
 
-  to {
-    opacity: 1;
-    transform: rotateX(0);
-  }
-}
+//   to {
+//     opacity: 1;
+//     transform: rotateX(0);
+//   }
+// }
 
-@keyframes transitionUp {
-  from {
-    transform: translateY(50px);
-  }
+// @keyframes transitionUp {
+//   from {
+//     transform: translateY(50px);
+//   }
 
-  to {
-    transform: translateY(0px);
-  }
-}
+//   to {
+//     transform: translateY(0px);
+//   }
+// }
