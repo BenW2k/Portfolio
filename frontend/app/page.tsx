@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import styles from "./styles/pages/home.module.css";
-import {motion, useAnimate} from "framer-motion";
+import {easeInOut, motion, useAnimate, useInView} from "framer-motion";
 
 export default function Home() {
   const [scope, animate] = useAnimate();
+  const isInView = useInView(scope);
 
   const handleAnimate = async () => {
-    animate("#hero-title", {opacity: 1}, {duration: 0.5});
+    animate("h1", {opacity: 1}, {duration: 0.5});
     // animate("#hero-paragraph", {opacity: 1});
     // animate("#hero-paragraph", {opacity: 1});
   };
