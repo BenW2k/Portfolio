@@ -1,5 +1,5 @@
 "use client";
-
+import {useEffect} from "react";
 import Image from "next/image";
 import styles from "./styles/pages/home.module.css";
 import {easeInOut, motion, useAnimate, useInView} from "framer-motion";
@@ -8,18 +8,14 @@ export default function Home() {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope);
 
-  const handleAnimate = async () => {
-    animate("h1", {opacity: 1}, {duration: 0.5});
-    // animate("#hero-paragraph", {opacity: 1});
-    // animate("#hero-paragraph", {opacity: 1});
-  };
+  useEffect(() => {
+    if (isInView) {
+      animate("#hero-title", {opacity: 1});
+    }
+  }, [isInView]);
 
   return (
-    <div
-      ref={scope}
-      onLoad={() => handleAnimate()}
-      className={styles["hero-section"]}
-    >
+    <div ref={scope} className={styles["hero-section"]}>
       <h1 id="hero-title" className={styles["hero-title"]}>
         Hello
       </h1>
