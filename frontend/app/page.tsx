@@ -10,7 +10,11 @@ export default function Home() {
 
   useEffect(() => {
     if (isInView) {
-      animate("#hero-title", {opacity: 1});
+      const heroAnimation = async () => {
+        animate("#hero-title", {opacity: 1}, {duration: 2});
+        await animate("#hero-paragraph", {opacity: 0.6}, {duration: 1});
+      };
+      heroAnimation();
     }
   }, [isInView]);
 
