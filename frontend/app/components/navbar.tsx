@@ -4,7 +4,7 @@ import Image from "next/image";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 
-export const Navbar = () => {
+export default function Navbar() {
   return (
     <div className={styles.navbar}>
       <Nav className={styles["nav-links"]}>
@@ -54,6 +54,4 @@ export const Navbar = () => {
       </div>
     </div>
   );
-};
-
-export default Navbar;
+}
