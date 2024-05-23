@@ -1,1 +1,146 @@
-/*# sourceMappingURL=navbar.module.css.map */
+@font-face {
+  font-family: Helvetica;
+  src: url("/frontend//app/assets/fonts/Helvetica.ttf");
+}
+@font-face {
+  font-family: var(--Helvetica-Light);
+  src: url("/frontend/app/assets/fonts/helvetica-light-587ebe5a59211.ttf");
+}
+@font-face {
+  font-family: Satoshi-Regular;
+  src: url("../../assets/fonts/Satoshi-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Italic;
+  src: url("../../assets/fonts/Satoshi-Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Medium-Italic;
+  src: url("../../assets/fonts/Satoshi-MediumItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Medium;
+  src: url("../../assets/fonts/Satoshi-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Light;
+  src: url("../../assets/fonts/Satoshi-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Light-Italic;
+  src: url("../../assets/fonts/Satoshi-LightItalic.otf") format("opentype");
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+  padding: 10px 20px 0px 20px;
+}
+
+.night-main-logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 5vh;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.nav-links a {
+  padding: 0px 40px;
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.navbar-icons {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.night-mode-button {
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 18px 30px 18px 30px;
+  border: 1px rgba(255, 255, 255, 0.568627451) solid;
+}
+.night-mode-button .night-mode-moon {
+  height: 20px;
+  width: auto;
+  color: white;
+}
+
+.nav-button {
+  padding: 18px 30px 18px 30px;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+}
+.nav-button span {
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+  opacity: 1;
+}
+
+.connect-button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #7808d0;
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 500;
+  padding: 18px 30px 18px 30px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+  font-size: 18px;
+}
+
+.connect-button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #111111;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.connect-button:hover {
+  background-color: #111111;
+}
+
+.connect-button:hover .connect-button__icon-wrapper {
+  color: #111111;
+}
+
+.connect-button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.connect-button:hover .connect-button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.connect-button:hover .connect-button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}/*# sourceMappingURL=navbar.module.css.map */
