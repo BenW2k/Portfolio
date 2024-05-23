@@ -11,8 +11,12 @@ export default function Home() {
   useEffect(() => {
     if (isInView) {
       const heroAnimation = async () => {
-        await animate("#hero-title", {opacity: 1}, {duration: 2});
-        // await animate ("#hero-title", {transform: })
+        await animate(
+          "#hero-title",
+          {opacity: 1},
+          {duration: 1.5, ease: "easeInOut"}
+        );
+        await animate(scope.current, {y: -100}, {duration: 1});
         await animate("#hero-paragraph", {opacity: 0.6}, {duration: 1});
       };
       heroAnimation();
