@@ -2,7 +2,7 @@
 import {useEffect} from "react";
 import Image from "next/image";
 import styles from "./styles/pages/home.module.css";
-import {easeInOut, motion, useAnimate, useInView} from "framer-motion";
+import {easeInOut, motion, useAnimate, useInView, stagger} from "framer-motion";
 
 export default function Home() {
   const [scope, animate] = useAnimate();
@@ -11,7 +11,8 @@ export default function Home() {
   useEffect(() => {
     if (isInView) {
       const heroAnimation = async () => {
-        animate("#hero-title", {opacity: 1}, {duration: 2});
+        await animate("#hero-title", {opacity: 1}, {duration: 2});
+        // await animate ("#hero-title", {transform: })
         await animate("#hero-paragraph", {opacity: 0.6}, {duration: 1});
       };
       heroAnimation();
