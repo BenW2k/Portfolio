@@ -15,10 +15,11 @@ export default function Home() {
         await animate(
           "#hero-title",
           {opacity: 1},
-          {duration: 1.5, ease: "easeInOut"}
+          {duration: 1, ease: "easeInOut"}
         );
-        await animate(scope.current, {y: -100}, {duration: 0.3});
-        await animate("#hero-paragraph", {opacity: 0.6}, {duration: 1.5});
+        await animate(scope.current, {y: -100}, {duration: 1});
+        await animate("#hero-paragraph", {opacity: 0.6}, {duration: 1});
+        await animate("#hero-tag", {opacity: 1}, {duration: 0.5});
       };
       heroAnimation();
     }
@@ -32,8 +33,10 @@ export default function Home() {
           Hello
         </h1>
         <p id="hero-paragraph" className={styles["hero-paragraph"]}>
-          I'm Ben Workman, a Full-stack Software Engineer with sub-specialties
-          in Web Development, Data Science, Machine Learning and Finance.
+          I'm Ben Workman, a{" "}
+          <span id="hero-tag">Full-stack Software Engineer</span> with
+          sub-specialties in Web Development, Data Science, Machine Learning and
+          Finance.
         </p>
       </div>
     </div>
