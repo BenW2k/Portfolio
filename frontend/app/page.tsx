@@ -16,8 +16,8 @@ export default function Home() {
           {opacity: 1},
           {duration: 1.5, ease: "easeInOut"}
         );
-        await animate(scope.current, {y: -100}, {duration: 1});
-        await animate("#hero-paragraph", {opacity: 0.6}, {duration: 1});
+        await animate(scope.current, {y: -100}, {duration: 0.3});
+        await animate("#hero-paragraph", {opacity: 0.6}, {duration: 1.5});
       };
       heroAnimation();
     }
