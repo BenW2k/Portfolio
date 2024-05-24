@@ -30,10 +30,10 @@ export default function Navbar() {
           href="https://www.linkedin.com/in/ben-workman-ds/"
           rel="noreferrer"
         >
-          <img src={linkedinIcon} alt="linkedin" />
+          <Image src={linkedinIcon} alt="linkedin" />
         </a>
         <a target="_blank" href="https://github.com/benw2k" rel="noreferrer">
-          <img src={githubIcon} alt="github" />
+          <Image src={githubIcon} alt="github" />
         </a>
       </div>
     </div>
