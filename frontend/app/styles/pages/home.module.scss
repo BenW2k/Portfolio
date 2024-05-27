@@ -1,5 +1,5 @@
 .navbar {
-  opacity: 0;
+  opacity: 1;
 }
 
 .hero-section {
@@ -16,8 +16,6 @@
   font-size: 100px;
   margin: 0px 0px 20px 0px;
   opacity: 0;
-  // animation: transitionIn 1.5s, transitionUp 1.5s;
-  // animation-fill-mode: forwards;
 }
 
 .hero-paragraph {
@@ -26,29 +24,39 @@
   text-align: center;
   opacity: 0;
   margin: 0;
-  // animation: transitionIn 1.5s, transitionUp 1.5s;
-  // animation-delay: 1.5s;
-  // animation-fill-mode: forwards;
 }
 
-// @keyframes transitionIn {
-//   from {
-//     opacity: 0;
-//     transform: rotateX(-15deg);
-//   }
+.loader {
+  display: flex;
+  align-items: center;
+}
 
-//   to {
-//     opacity: 1;
-//     transform: rotateX(0);
-//   }
-// }
+.bar {
+  display: inline-block;
+  width: 3px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  animation: scale-up4 1s linear infinite;
+}
 
-// @keyframes transitionUp {
-//   from {
-//     transform: translateY(50px);
-//   }
+.bar:nth-child(2) {
+  height: 35px;
+  margin: 0 5px;
+  animation-delay: 0.25s;
+}
 
-//   to {
-//     transform: translateY(0px);
-//   }
-// }
+.bar:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes scale-up4 {
+  20% {
+    background-color: #ffff;
+    transform: scaleY(1.5);
+  }
+
+  40% {
+    transform: scaleY(1);
+  }
+}
