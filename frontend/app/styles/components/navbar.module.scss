@@ -2,7 +2,7 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 5vh;
   width: 100%;
@@ -18,12 +18,13 @@
 .nav-links {
   display: flex;
   width: 50%;
-  justify-content: center;
+  // justify-content: center;
   a {
     padding: 0px 40px;
     color: white;
     font-weight: 100;
     font-size: 18px;
+    text-decoration: none;
   }
 }
 .navbar-icons {
