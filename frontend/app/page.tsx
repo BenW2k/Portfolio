@@ -27,7 +27,7 @@ export default function Home() {
   }, [isInView]);
 
   return (
-    <div>
+    <div ref={scope}>
       <div id="navbar-div" className={styles["navbar"]}>
         <Navbar />
       </div>
