@@ -24,7 +24,7 @@ export default function Navbar() {
           GitHub
         </Link>
       </Nav>
-      <div className={styles["social-icon"]}>
+      {/* <div className={styles["social-icon"]}>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/ben-workman-ds/"
@@ -35,7 +35,7 @@ export default function Navbar() {
         <a target="_blank" href="https://github.com/benw2k" rel="noreferrer">
           <Image src={githubIcon} alt="github" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
