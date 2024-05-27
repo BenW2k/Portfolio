@@ -20,6 +20,7 @@ export default function Home() {
         // await animate(scope.current, {y: -100}, {duration: 1});
         await animate("#hero-paragraph", {opacity: 0.6}, {duration: 1});
         await animate("#hero-tag", {opacity: 1}, {duration: 2});
+        await animate("#navbar-div", {opacity: 1}, {duration: 2});
       };
       heroAnimation();
     }
@@ -27,7 +28,9 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar />
+      <div id="navbar-div" className={styles["navbar"]}>
+        <Navbar />
+      </div>
       <div ref={scope} className={styles["hero-section"]}>
         <h1 id="hero-title" className={styles["hero-title"]}>
           Hello
