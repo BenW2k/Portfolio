@@ -36,7 +36,7 @@
   align-items: center;
   height: 5vh;
   width: 100%;
-  padding: 10px 20px 0px 20px;
+  padding: 10px 0px 0px 0px;
 }
 
 .night-main-logo {
@@ -49,9 +49,10 @@
 .nav-links {
   display: flex;
   width: 50%;
+  justify-content: center;
 }
 .nav-links a {
-  padding: 0px 40px;
+  padding: 0px 60px;
   color: white;
   font-weight: 100;
   font-size: 18px;
