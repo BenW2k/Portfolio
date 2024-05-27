@@ -19,7 +19,7 @@ export default function Home() {
         );
         // await animate(scope.current, {y: -100}, {duration: 1});
         await animate("#hero-paragraph", {opacity: 0.6}, {duration: 1});
-        await animate("#hero-tag", {opacity: 1}, {duration: 2});
+        // await animate("#hero-tag", {opacity: 1}, {duration: 2});
         await animate("#navbar-div", {opacity: 1}, {duration: 2});
       };
       heroAnimation();
