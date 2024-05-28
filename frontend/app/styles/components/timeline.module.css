@@ -14,6 +14,12 @@
   width: 40%;
   position: relative;
 }
+.text-box small {
+  opacity: 0.8;
+}
+.text-box p {
+  opacity: 0.6;
+}
 
 .roadmap-image {
   width: auto;
@@ -27,6 +33,16 @@
 }
 
 .right-side {
-  left: 50%;
+  left: 60%;
   position: relative;
+}
+
+.roadmap-line {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
 }/*# sourceMappingURL=timeline.module.css.map */
