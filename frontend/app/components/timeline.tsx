@@ -6,7 +6,7 @@ export default function Timeline() {
   return (
     <div className={styles["timeline"]}>
       <div className={styles["container"]}>
-        <div className={styles["text-box"]}>
+        <div className={`${styles["text-box"]} ${styles["right-side"]}`}>
           <h2>BSc Business Management</h2>
           <h4>Swansea University</h4>
           <small>Oct 2018 - July 2021</small>
@@ -18,9 +18,14 @@ export default function Timeline() {
             reprehenderit! Omnis nobis dolore vero!
           </p>
         </div>
+        <Image
+          src={placeholder}
+          className={`${styles["roadmap-image"]} ${styles["left-side"]}`}
+          alt="placeholder"
+        />
       </div>
       <div className={styles["container"]}>
-        <div className={styles["text-box"]}>
+        <div className={`${styles["text-box"]} ${styles["left-side"]}`}>
           <h2>MSc Financial Technology</h2>
           <h4>Swansea University</h4>
           <small>Sept 2023 - Nov 2023</small>
@@ -32,9 +37,15 @@ export default function Timeline() {
             reprehenderit! Omnis nobis dolore vero!
           </p>
         </div>
+        <Image
+          src={placeholder}
+          className={`${styles["roadmap-image"]} ${styles["right-side"]}`}
+          alt="placeholder"
+        />
       </div>
+      {/* <div className={`${styles["container"]} ${styles["right-side"]}`}> */}
       <div className={styles["container"]}>
-        <div className={styles["text-box"]}>
+        <div className={`${styles["text-box"]} ${styles["right-side"]}`}>
           <h2>Placeholder Name</h2>
           <h4>Synergy Construction Ltd.</h4>
           <small>Sept 2023 - Nov 2023</small>
@@ -46,9 +57,14 @@ export default function Timeline() {
             reprehenderit! Omnis nobis dolore vero!
           </p>
         </div>
+        <Image
+          src={placeholder}
+          className={`${styles["roadmap-image"]} ${styles["left-side"]}`}
+          alt="placeholder"
+        />
       </div>
       <div className={styles["container"]}>
-        <div className={styles["text-box"]}>
+        <div className={`${styles["text-box"]} ${styles["left-side"]}`}>
           <h2>Freelance Full-stack Engineer</h2>
           <small>Nov 2023 - Present</small>
           <p>
@@ -58,12 +74,12 @@ export default function Timeline() {
             itaque, quos cupiditate corrupti repellendus, vel tempore expedita
             reprehenderit! Omnis nobis dolore vero!
           </p>
-          <Image
-            src={placeholder}
-            className={styles["roadmap-image left-side"]}
-            alt="linkedin"
-          />
         </div>
+        <Image
+          src={placeholder}
+          className={`${styles["roadmap-image"]} ${styles["right-side"]}`}
+          alt="placeholder"
+        />
       </div>
     </div>
   );
