@@ -1,5 +1,6 @@
 "use client";
 import Navbar from "./components/navbar";
+import Timeline from "./components/timeline";
 import {useEffect} from "react";
 import Image from "next/image";
 import styles from "./styles/pages/home.module.css";
