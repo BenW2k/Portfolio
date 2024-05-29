@@ -1,3 +1,10 @@
+.timeline-header {
+  text-align: center;
+}
+.timeline-header h1 {
+  font-size: 64px;
+}
+
 .timeline {
   margin: 100px;
 }
