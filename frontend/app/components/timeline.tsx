@@ -1,11 +1,19 @@
 import styles from "../styles/components/timeline.module.css";
+import {useEffect} from "react";
 import Image from "next/image";
 import placeholder from "../assets/media/placeholder-image.svg";
+import {motion, useScroll} from "framer-motion";
 
 export default function Timeline() {
   return (
     <div className={styles["timeline"]}>
-      <div className={`${styles["container"]} ${styles["point1"]}`}>
+      <div className={styles["roadmap-line"]}></div>
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        viewport={{amount: "all"}}
+        className={`${styles["container"]} ${styles["point1"]}`}
+      >
         <div className={`${styles["text-box"]} ${styles["right-side"]}`}>
           <h2>BSc Business Management</h2>
           <h4>Swansea University</h4>
@@ -18,14 +26,20 @@ export default function Timeline() {
             reprehenderit! Omnis nobis dolore vero!
           </p>
         </div>
-        <div className={styles["roadmap-line"]}></div>
+
+        {/* <div className={styles["roadmap-point"]}></div> */}
         <Image
           src={placeholder}
           className={`${styles["roadmap-image"]} ${styles["left-side"]}`}
           alt="placeholder"
         />
-      </div>
-      <div className={`${styles["container"]} ${styles["point2"]}`}>
+      </motion.div>
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        viewport={{amount: "all"}}
+        className={`${styles["container"]} ${styles["point2"]}`}
+      >
         <div className={`${styles["text-box"]} ${styles["left-side"]}`}>
           <h2>MSc Financial Technology</h2>
           <h4>Swansea University</h4>
@@ -38,14 +52,14 @@ export default function Timeline() {
             reprehenderit! Omnis nobis dolore vero!
           </p>
         </div>
-        <div className={styles["roadmap-line"]}></div>
+        {/* <div className={styles["roadmap-point"]}></div> */}
         <Image
           src={placeholder}
           className={`${styles["roadmap-image"]} ${styles["right-side"]}`}
           alt="placeholder"
         />
-      </div>
-      {/* <div className={`${styles["container"]} ${styles["right-side"]}`}> */}
+      </motion.div>
+      {/* <div className={`${styles["container"]} ${styles["right-side"]}`}>
       <div className={`${styles["container"]} ${styles["point3"]}`}>
         <div className={`${styles["text-box"]} ${styles["right-side"]}`}>
           <h2>Placeholder Name</h2>
@@ -59,8 +73,8 @@ export default function Timeline() {
             reprehenderit! Omnis nobis dolore vero!
           </p>
         </div>
-        <div className={styles["roadmap-line"]}></div>
-        <Image
+        {/* <div className={styles["roadmap-point"]}></div> */}
+      {/* <Image
           src={placeholder}
           className={`${styles["roadmap-image"]} ${styles["left-side"]}`}
           alt="placeholder"
@@ -69,6 +83,7 @@ export default function Timeline() {
       <div className={`${styles["container"]} ${styles["point4"]}`}>
         <div className={`${styles["text-box"]} ${styles["left-side"]}`}>
           <h2>Freelance Full-stack Engineer</h2>
+          <h4>Self-employed</h4>
           <small>Nov 2023 - Present</small>
           <p>
             {" "}
@@ -78,13 +93,14 @@ export default function Timeline() {
             reprehenderit! Omnis nobis dolore vero!
           </p>
         </div>
-        <div className={styles["roadmap-line"]}></div>
-        <Image
+
+        {/* <div className={styles["roadmap-point"]}></div> */}
+      {/* <Image
           src={placeholder}
           className={`${styles["roadmap-image"]} ${styles["right-side"]}`}
           alt="placeholder"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
