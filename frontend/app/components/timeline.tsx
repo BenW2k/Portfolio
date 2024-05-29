@@ -11,7 +11,7 @@ export default function Timeline() {
       <motion.div
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
-        viewport={{margin: "200px"}}
+        viewport={{amount: "all"}}
         className={`${styles["container"]} ${styles["point1"]}`}
       >
         <div className={`${styles["text-box"]} ${styles["right-side"]}`}>
