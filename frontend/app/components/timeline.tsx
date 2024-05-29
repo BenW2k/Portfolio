@@ -11,7 +11,7 @@ export default function Timeline() {
       <motion.div
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
-        viewport={{amount: "all"}}
+        viewport={{margin: "200px"}}
         className={`${styles["container"]} ${styles["point1"]}`}
       >
         <div className={`${styles["text-box"]} ${styles["right-side"]}`}>
@@ -59,8 +59,12 @@ export default function Timeline() {
           alt="placeholder"
         />
       </motion.div>
-      {/* <div className={`${styles["container"]} ${styles["right-side"]}`}>
-      <div className={`${styles["container"]} ${styles["point3"]}`}>
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        viewport={{amount: "all"}}
+        className={`${styles["container"]} ${styles["point-3"]}`}
+      >
         <div className={`${styles["text-box"]} ${styles["right-side"]}`}>
           <h2>Placeholder Name</h2>
           <h4>Synergy Construction Ltd.</h4>
@@ -73,14 +77,18 @@ export default function Timeline() {
             reprehenderit! Omnis nobis dolore vero!
           </p>
         </div>
-        {/* <div className={styles["roadmap-point"]}></div> */}
-      {/* <Image
+        <Image
           src={placeholder}
           className={`${styles["roadmap-image"]} ${styles["left-side"]}`}
           alt="placeholder"
         />
-      </div>
-      <div className={`${styles["container"]} ${styles["point4"]}`}>
+      </motion.div>
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        viewport={{amount: "all"}}
+        className={`${styles["container"]} ${styles["point4"]}`}
+      >
         <div className={`${styles["text-box"]} ${styles["left-side"]}`}>
           <h2>Freelance Full-stack Engineer</h2>
           <h4>Self-employed</h4>
@@ -94,13 +102,13 @@ export default function Timeline() {
           </p>
         </div>
 
-        {/* <div className={styles["roadmap-point"]}></div> */}
-      {/* <Image
+        <div className={styles["roadmap-point"]}></div>
+        <Image
           src={placeholder}
           className={`${styles["roadmap-image"]} ${styles["right-side"]}`}
           alt="placeholder"
         />
-      </div> */}
+      </motion.div>
     </div>
   );
 }
