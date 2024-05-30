@@ -9,17 +9,19 @@ export default function Timeline() {
 
   return (
     <div className={styles["timeline-container"]}>
-      <motion.div
-        // viewport={{amount: "all"}}
-        className={styles["timeline-header"]}
-      >
-        <h1>Heading</h1>
-      </motion.div>
       <div className={styles["timeline"]}>
         <motion.div
-          style={{scaleY: scrollYProgress}}
+          // viewport={{amount: "all"}}
+          className={styles["timeline-header"]}
+        >
+          <h1>Heading</h1>
+        </motion.div>
+        <motion.div
+          // style={{scaleY: scrollYProgress}}
           className={styles["roadmap-line"]}
-        ></motion.div>
+        >
+          <div />
+        </motion.div>
         <motion.div
           initial={{opacity: 0}}
           whileInView={{opacity: 1}}
