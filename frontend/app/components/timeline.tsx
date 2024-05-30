@@ -5,13 +5,21 @@ import placeholder from "../assets/media/placeholder-image.svg";
 import {motion, useScroll} from "framer-motion";
 
 export default function Timeline() {
+  const {scrollYProgress} = useScroll();
+
   return (
-    <div>
-      <div className={styles["timeline-header"]}>
+    <div className={styles["timeline-container"]}>
+      <motion.div
+        // viewport={{amount: "all"}}
+        className={styles["timeline-header"]}
+      >
         <h1>Heading</h1>
-      </div>
+      </motion.div>
       <div className={styles["timeline"]}>
-        <div className={styles["roadmap-line"]}></div>
+        <motion.div
+          style={{scaleY: scrollYProgress}}
+          className={styles["roadmap-line"]}
+        ></motion.div>
         <motion.div
           initial={{opacity: 0}}
           whileInView={{opacity: 1}}
