@@ -25,4 +25,17 @@
   text-align: center;
   opacity: 0;
   margin: 0;
+}
+
+.skills {
+  height: 100vh;
+  width: auto;
+}
+
+.dummy-container {
+  padding-top: 200px;
+  text-align: center;
+}
+.dummy-container p {
+  font-size: 100px;
 }/*# sourceMappingURL=home.module.css.map */
