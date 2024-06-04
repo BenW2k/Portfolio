@@ -86,7 +86,9 @@ export default function Home() {
       </div>
       <div className={styles["skills"]}>
         <div className={styles["dummy-container"]}>
-          <p>Dummy</p>
+          <div className={styles["skills-heading"]}>
+            <h1>Skills</h1>
+          </div>
         </div>
       </div>
     </div>
