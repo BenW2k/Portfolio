@@ -1,0 +1,17 @@
+.skills {
+  height: 100vh;
+  width: auto;
+}
+
+.dummy-container {
+  padding-top: 200px;
+  .skills-heading h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+}
+
+.skill-panel {
+  display: flex;
+  justify-content: left;
+}

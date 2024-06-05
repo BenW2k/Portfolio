@@ -25,22 +25,4 @@
   text-align: center;
   opacity: 0;
   margin: 0;
-}
-
-.skills {
-  height: 100vh;
-  width: auto;
-}
-
-.dummy-container {
-  padding-top: 200px;
-}
-.dummy-container .skills-heading h1 {
-  font-size: 64px;
-  text-align: center;
-}
-
-.skill-panel {
-  display: flex;
-  justify-content: left;
 }/*# sourceMappingURL=home.module.css.map */

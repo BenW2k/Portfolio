@@ -1,1 +1,17 @@
-/*# sourceMappingURL=skills.module.css.map */
+.skills {
+  height: 100vh;
+  width: auto;
+}
+
+.dummy-container {
+  padding-top: 200px;
+}
+.dummy-container .skills-heading h1 {
+  font-size: 64px;
+  text-align: center;
+}
+
+.skill-panel {
+  display: flex;
+  justify-content: left;
+}/*# sourceMappingURL=skills.module.css.map */
