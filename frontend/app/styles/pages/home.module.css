@@ -34,8 +34,13 @@
 
 .dummy-container {
   padding-top: 200px;
+}
+.dummy-container .skills-heading h1 {
+  font-size: 64px;
   text-align: center;
 }
-.dummy-container h1 {
-  font-size: 64px;
+
+.skill-panel {
+  display: flex;
+  justify-content: left;
 }/*# sourceMappingURL=home.module.css.map */
