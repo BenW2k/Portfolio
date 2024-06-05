@@ -5,13 +5,24 @@
 
 .dummy-container {
   padding-top: 200px;
-  .skills-heading h1 {
-    font-size: 64px;
-    text-align: center;
+  .skills-title {
+    background: none;
+    border: none;
+    padding: 0;
+    h1 {
+      font-size: 64px;
+      text-align: center;
+    }
   }
 }
 
-.skill-panel {
-  display: flex;
-  justify-content: left;
-}
+// .skill-panel {
+//   display: flex;
+//   justify-content: left;
+// }
+
+// .skill-header {
+// }
+
+// .skill-body {
+// }
