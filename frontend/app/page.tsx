@@ -84,13 +84,6 @@ export default function Home() {
       <div className={styles["timeline"]}>
         <Timeline />
       </div>
-      <div className={styles["skills"]}>
-        <div className={styles["dummy-container"]}>
-          <div className={styles["skills-heading"]}>
-            <h1>Skills</h1>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
