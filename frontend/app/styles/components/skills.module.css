@@ -6,12 +6,18 @@
 .dummy-container {
   padding-top: 200px;
 }
-.dummy-container .skills-title {
+.dummy-container .container-title {
   background: none;
   border: none;
   padding: 0;
 }
-.dummy-container .skills-title h1 {
+.dummy-container .container-title h1 {
   font-size: 64px;
   text-align: center;
+}
+
+.skill-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=skills.module.css.map */
