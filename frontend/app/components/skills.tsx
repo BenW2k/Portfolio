@@ -1,33 +1,26 @@
 import styles from "../styles/components/skills.module.css";
-import Accordion from "react-bootstrap/Accordion";
+import useState from "react";
 
 export default function Skills() {
-  const data = [
-    {
-      name: "Software Development",
-      answer: "lorem ipsum 1",
-    },
-    {
-      name: "Machine Learning",
-      answer: "lorem ipsum 2",
-    },
-    {
-      name: "Data Science",
-      answer: "lorem ipsum 3",
-    },
-    {
-      name: "Other",
-      answer: "lorem ipsum 4",
-    },
-  ];
   return (
     <div className={styles["skills"]}>
       <div className={styles["dummy-container"]}>
-        <button className={styles["skills-title"]}>
+        <div className={styles["container-title"]}>
           <h1>Skills</h1>
-        </button>
+        </div>
         <div className={styles["skill-panel"]}>
-          <h1>Software Development</h1>
+          <button className={styles["skill-title"]}>
+            <h1>Software Development</h1>
+            <span>+</span>
+          </button>
+          <div className={styles["skills-body"]}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id
+              est asperiores, consequuntur, praesentium perspiciatis beatae
+              voluptatem incidunt aut quo iusto quae magni vitae architecto, cum
+              aliquid minus inventore. Laboriosam!
+            </p>
+          </div>
         </div>
         <div className={styles["skill-panel"]}>
           <h1>Machine Learning</h1>
