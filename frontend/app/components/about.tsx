@@ -1,3 +1,5 @@
+import styles from "../styles/components/about.module.css";
+
 export default function About() {
-  return <p>hello world</p>;
+  return <div></div>;
 }
