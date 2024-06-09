@@ -40,12 +40,19 @@
   border-radius: 20px;
   h3 {
     font-size: 32px;
-    margin: 0;
+    margin: 20px 20px;
+    display: flex;
+    max-height: 50%;
+  }
+  p {
+    max-height: 50%;
+    margin: 20px;
   }
 }
 
 .ml-and-ds {
   display: flex;
+  flex-direction: column;
   grid-row: 2 / 3;
   grid-column: 2 / 4;
   margin: 0 auto;
@@ -53,12 +60,13 @@
   background-color: green;
   h3 {
     font-size: 32px;
-    margin: 0 auto;
+    margin: 20px 20px;
     display: flex;
     max-height: 50%;
   }
   p {
     max-height: 50%;
+    margin: 20px;
   }
 }
 
