@@ -1,5 +1,6 @@
 "use client";
 import Navbar from "./components/navbar";
+import About from "./components/about";
 import Timeline from "./components/timeline";
 import Skills from "./components/skills-accordion";
 import {useEffect} from "react";
@@ -81,6 +82,9 @@ export default function Home() {
           <span id="hero-span-4">Machine Learning</span> and
           <span id="hero-span-5"> Finance.</span>
         </p>
+      </div>
+      <div className={styles["about"]}>
+        <About />
       </div>
       <div className={styles["timeline"]}>
         <Timeline />
