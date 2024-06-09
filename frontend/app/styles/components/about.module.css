@@ -1,1 +1,54 @@
-/*# sourceMappingURL=about.module.css.map */
+.container {
+  width: auto;
+  height: 120vh;
+  background-color: aquamarine;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+
+.grid {
+  display: grid;
+  width: 70%;
+  height: 50%;
+  background-color: black;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.intro {
+  display: flex;
+  grid-row: 1/2;
+  grid-column: 2/5;
+  border-radius: 10px;
+}
+.intro p {
+  display: flex;
+  font-size: 24px;
+  place-self: center;
+}
+
+.dev {
+  display: flex;
+  justify-content: center;
+  grid-row: 2/3;
+  grid-column: 4/6;
+  background-color: bisque;
+  border-radius: 10px;
+}
+.dev h3 {
+  font-size: 32px;
+}
+
+.ml-and-ds {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  background-color: green;
+}
+
+.face {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  background-color: orange;
+}/*# sourceMappingURL=about.module.css.map */
