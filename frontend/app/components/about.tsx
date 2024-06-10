@@ -19,8 +19,12 @@ export default function About() {
               architecto?
             </p>
           </div>
-          <div className={styles["ml-and-ds"]}>
-            <h3>Machine Learning & Data Science</h3>
+          <div className={styles["ml"]}>
+            <h3>Machine Learning</h3>
+            <p>Leveraging Data to create meaningful and impactful solutions</p>
+          </div>
+          <div className={styles["ml"]}>
+            <h3>Data Science</h3>
             <p>Leveraging Data to create meaningful and impactful solutions</p>
           </div>
           <div className={styles["dev"]}>
