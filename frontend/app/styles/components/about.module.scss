@@ -11,7 +11,7 @@
   width: 70%;
   height: 50%;
   padding: 20px;
-  background-color: black;
+  // background-color: purple;
   margin: 0 auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -27,6 +27,7 @@
   p {
     font-size: 24px;
     place-self: center;
+    margin: 30px;
   }
 }
 
@@ -36,7 +37,6 @@
   justify-content: center;
   grid-row: 2 / 3;
   grid-column: 4 / 6;
-  background-color: bisque;
   border-radius: 20px;
   h3 {
     font-size: 32px;
@@ -50,14 +50,32 @@
   }
 }
 
-.ml-and-ds {
+.ml {
   display: flex;
   flex-direction: column;
   grid-row: 2 / 3;
-  grid-column: 2 / 4;
+  grid-column: 3 / 4;
   margin: 0 auto;
   border-radius: 20px;
-  background-color: green;
+  h3 {
+    font-size: 32px;
+    margin: 20px 20px;
+    display: flex;
+    max-height: 50%;
+  }
+  p {
+    max-height: 50%;
+    margin: 20px;
+  }
+}
+
+.ds {
+  display: flex;
+  flex-direction: column;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  margin: 0 auto;
+  border-radius: 20px;
   h3 {
     font-size: 32px;
     margin: 20px 20px;
@@ -77,7 +95,6 @@
   overflow: hidden;
   grid-row: 1 / 2;
   grid-column: 5 / 6;
-  background-color: orange;
   border-radius: 20px;
   justify-content: center;
   .face-img {
@@ -87,6 +104,7 @@
 }
 
 .glass {
+  opacity: 0.5;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
