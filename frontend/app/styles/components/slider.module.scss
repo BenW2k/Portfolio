@@ -1,0 +1,16 @@
+.skill-slider {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  background: white;
+  width: 80%;
+  height: 10vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.skill-icon {
+  height: 2em;
+  width: auto;
+}
