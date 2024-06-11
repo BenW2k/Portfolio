@@ -10,7 +10,7 @@ export default function About() {
       </div>
       <div className={styles["container"]}>
         <div className={styles["grid"]}>
-          <div className={styles["intro"]}>
+          <div className={`${styles["glass"]} ${styles["intro"]} `}>
             <p>
               {" "}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
@@ -23,15 +23,15 @@ export default function About() {
             <h3>Machine Learning</h3>
             <p>Leveraging Data to create meaningful and impactful solutions</p>
           </div>
-          <div className={styles["ml"]}>
+          <div className={styles["ds"]}>
             <h3>Data Science</h3>
             <p>Leveraging Data to create meaningful and impactful solutions</p>
           </div>
-          <div className={styles["dev"]}>
+          <div className={`${styles["glass"]}  ${styles["dev"]} `}>
             <h3>Web & Software Development</h3>
             <p>Piloting development from idea to implementation</p>
           </div>
-          <div className={styles["face"]}>
+          <div className={`${styles["glass"]}  ${styles["face"]} `}>
             <Image
               src={face}
               className={styles["face-img"]}
