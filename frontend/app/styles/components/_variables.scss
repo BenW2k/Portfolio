@@ -10,6 +10,11 @@
   font-family: Satoshi-Regular;
   src: url("../../assets/fonts/Satoshi-Regular.otf") format("opentype");
 }
+
+@font-face {
+  font-family: Satoshi-Bold;
+  src: url("../../assets/fonts/Satoshi-Bold.otf") format("opentype");
+}
 @font-face {
   font-family: Satoshi-Italic;
   src: url("../../assets/fonts/Satoshi-Italic.otf") format("opentype");
@@ -32,3 +37,4 @@
 }
 $light-font: Satoshi-Light, sans-serif;
 $medium-font: Satoshi-Regular, sans-serif;
+$bold-font: Satoshi-Bold, sans-serif;
