@@ -11,6 +11,10 @@
   src: url("../../assets/fonts/Satoshi-Regular.otf") format("opentype");
 }
 @font-face {
+  font-family: Satoshi-Bold;
+  src: url("../../assets/fonts/Satoshi-Bold.otf") format("opentype");
+}
+@font-face {
   font-family: Satoshi-Italic;
   src: url("../../assets/fonts/Satoshi-Italic.otf") format("opentype");
 }
