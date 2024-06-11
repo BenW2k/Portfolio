@@ -1,5 +1,6 @@
 import styles from "../styles/components/about.module.css";
 import Image from "next/image";
+import SkillSlider from "./skill-slider";
 import face from "../assets/media/face-nobg.png";
 
 export default function About() {
@@ -43,7 +44,9 @@ export default function About() {
           </div>
           <div className={`${styles["glass"]}  ${styles["dummy"]} `}>Dummy</div>
         </div>
-        <div className={styles["logo-slider"]}></div>
+        <div className={styles["logo-slider"]}>
+          <SkillSlider />
+        </div>
       </div>
     </div>
   );
