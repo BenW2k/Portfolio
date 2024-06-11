@@ -1,14 +1,58 @@
+@font-face {
+  font-family: Helvetica;
+  src: url("/frontend//app/assets/fonts/Helvetica.ttf");
+}
+@font-face {
+  font-family: var(--Helvetica-Light);
+  src: url("/frontend/app/assets/fonts/helvetica-light-587ebe5a59211.ttf");
+}
+@font-face {
+  font-family: Satoshi-Regular;
+  src: url("../../assets/fonts/Satoshi-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Bold;
+  src: url("../../assets/fonts/Satoshi-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Italic;
+  src: url("../../assets/fonts/Satoshi-Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Medium-Italic;
+  src: url("../../assets/fonts/Satoshi-MediumItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Medium;
+  src: url("../../assets/fonts/Satoshi-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Light;
+  src: url("../../assets/fonts/Satoshi-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Light-Italic;
+  src: url("../../assets/fonts/Satoshi-LightItalic.otf") format("opentype");
+}
 .container {
   width: auto;
   height: 120vh;
   background-color: rgb(44, 44, 44);
   border-radius: 20px;
   border: 1px solid grey;
+  text-align: center;
+}
+.container p {
+  opacity: 0.8;
+  font-size: 24px;
+}
+.container h3 {
+  font-family: Satoshi-Bold, sans-serif;
 }
 
 .grid {
   display: grid;
-  width: 70%;
+  width: 80%;
   height: 50%;
   padding: 20px;
   margin: 0 auto;
@@ -16,6 +60,13 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   border-radius: 10px;
+}
+
+.dummy {
+  display: flex;
+  grid-row: 1/3;
+  grid-column: 1/2;
+  border-radius: 20px;
 }
 
 .intro {
@@ -34,13 +85,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   grid-row: 2/3;
   grid-column: 4/6;
   border-radius: 20px;
 }
 .dev h3 {
   font-size: 32px;
-  margin: 20px 20px;
   display: flex;
   max-height: 50%;
 }
@@ -58,8 +109,8 @@
   border-radius: 20px;
 }
 .ml h3 {
-  font-size: 32px;
-  margin: 20px 20px;
+  font-size: 26px;
+  margin: 30px auto 20px;
   display: flex;
   max-height: 50%;
 }
@@ -77,14 +128,16 @@
   border-radius: 20px;
 }
 .ds h3 {
-  font-size: 32px;
-  margin: 20px 20px;
+  font-size: 26px;
+  margin: 30px auto 20px auto;
   display: flex;
   max-height: 50%;
 }
 .ds p {
   max-height: 50%;
+  font-size: 24px;
   margin: 20px;
+  justify-self: center;
 }
 
 .face {
@@ -98,15 +151,14 @@
   justify-content: center;
 }
 .face .face-img {
-  height: 30vh;
+  height: 33vh;
   width: auto;
 }
 
 .glass {
-  opacity: 0.5;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);

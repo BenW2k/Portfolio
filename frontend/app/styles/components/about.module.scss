@@ -1,14 +1,24 @@
+@use "variables";
+
 .container {
   width: auto;
   height: 120vh;
   background-color: rgb(44, 44, 44);
   border-radius: 20px;
   border: 1px solid grey;
+  text-align: center;
+  p {
+    opacity: 0.8;
+    font-size: 24px;
+  }
+  h3 {
+    font-family: variables.$bold-font;
+  }
 }
 
 .grid {
   display: grid;
-  width: 70%;
+  width: 80%;
   height: 50%;
   padding: 20px;
   // background-color: purple;
@@ -17,6 +27,13 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   border-radius: 10px;
+}
+
+.dummy {
+  display: flex;
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  border-radius: 20px;
 }
 
 .intro {
@@ -35,12 +52,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   grid-row: 2 / 3;
   grid-column: 4 / 6;
   border-radius: 20px;
   h3 {
     font-size: 32px;
-    margin: 20px 20px;
     display: flex;
     max-height: 50%;
   }
@@ -58,8 +75,9 @@
   margin: 0 auto;
   border-radius: 20px;
   h3 {
-    font-size: 32px;
-    margin: 20px 20px;
+    font-size: 26px;
+    // margin: 30px 30px;
+    margin: 30px auto 20px;
     display: flex;
     max-height: 50%;
   }
@@ -77,14 +95,16 @@
   margin: 0 auto;
   border-radius: 20px;
   h3 {
-    font-size: 32px;
-    margin: 20px 20px;
+    font-size: 26px;
+    margin: 30px auto 20px auto;
     display: flex;
     max-height: 50%;
   }
   p {
     max-height: 50%;
+    font-size: 24px;
     margin: 20px;
+    justify-self: center;
   }
 }
 
@@ -98,20 +118,19 @@
   border-radius: 20px;
   justify-content: center;
   .face-img {
-    height: 30vh;
+    height: 33vh;
     width: auto;
   }
 }
 
 .glass {
-  opacity: 0.5;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
