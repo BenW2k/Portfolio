@@ -13,23 +13,26 @@ export default function About() {
           <div className={`${styles["glass"]} ${styles["intro"]} `}>
             <p>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              fugit soluta non expedita modi minima repellat. Quod non error qui
-              totam labore sit hic cumque mollitia molestiae, quae perferendis
-              architecto?
+              A Full-stack Developer with with sub-specialties in data analytics
+              and finance.
             </p>
           </div>
-          <div className={styles["ml"]}>
+          <div className={`${styles["glass"]}  ${styles["ml"]}`}>
             <h3>Machine Learning</h3>
-            <p>Leveraging Data to create meaningful and impactful solutions</p>
+            <p>
+              Building intelligent solutions that facilitate growth and success
+            </p>
           </div>
-          <div className={styles["ds"]}>
+          <div className={`${styles["glass"]}  ${styles["ds"]}`}>
             <h3>Data Science</h3>
-            <p>Leveraging Data to create meaningful and impactful solutions</p>
+            <p>Leveraging data to create meaningful and impactful solutions</p>
           </div>
           <div className={`${styles["glass"]}  ${styles["dev"]} `}>
             <h3>Web & Software Development</h3>
-            <p>Piloting development from idea to implementation</p>
+            <p>
+              Piloting development from idea to implementation with proficiency
+              in a range development tools
+            </p>
           </div>
           <div className={`${styles["glass"]}  ${styles["face"]} `}>
             <Image
@@ -38,8 +41,9 @@ export default function About() {
               alt="Picture of the self"
             />
           </div>
-          <p>yes</p>
+          <div className={`${styles["glass"]}  ${styles["dummy"]} `}>Dummy</div>
         </div>
+        <div className={styles["logo-slider"]}></div>
       </div>
     </div>
   );
