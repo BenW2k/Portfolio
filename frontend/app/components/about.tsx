@@ -5,7 +5,7 @@ import face from "../assets/media/face-nobg.png";
 
 export default function About() {
   return (
-    <div>
+    <div className={styles["about"]}>
       <div className={styles["section-title"]}>
         <h1>ABOUT ME</h1>
       </div>
