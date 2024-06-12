@@ -1,6 +1,6 @@
 import styles from "../styles/components/about.module.css";
 import Image from "next/image";
-import SkillSlider from "./skill-slider";
+import SkillSlider from "./icon-slider";
 import face from "../assets/media/face-nobg.png";
 
 export default function About() {
