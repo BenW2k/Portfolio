@@ -2,7 +2,6 @@
 import Navbar from "./components/navbar";
 import About from "./components/about";
 import Timeline from "./components/timeline";
-import Skills from "./components/skills-accordion";
 import {useEffect} from "react";
 import Image from "next/image";
 import styles from "./styles/pages/home.module.css";
@@ -89,9 +88,7 @@ export default function Home() {
       <div className={styles["timeline"]}>
         <Timeline />
       </div>
-      <div>
-        <Skills />
-      </div>
+      <div></div>
     </div>
   );
 }
