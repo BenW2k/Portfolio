@@ -53,17 +53,20 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  // margin-top: auto;
+  // margin: 0 auto;
   grid-row: 2 / 3;
   grid-column: 4 / 6;
   border-radius: 20px;
   h3 {
     font-size: 32px;
-    display: flex;
+    // display: flex;
     max-height: 50%;
+    margin-top: 0;
   }
   p {
     max-height: 50%;
-    margin: 20px;
+    margin: 0px 20px 0px 20px;
   }
 }
 
@@ -72,10 +75,11 @@
   flex-direction: column;
   grid-row: 2 / 3;
   grid-column: 3 / 4;
+
   margin: 0 auto;
   border-radius: 20px;
   h3 {
-    font-size: 26px;
+    font-size: 30px;
     // margin: 30px 30px;
     margin: 30px auto 20px;
     display: flex;
@@ -95,7 +99,7 @@
   margin: 0 auto;
   border-radius: 20px;
   h3 {
-    font-size: 26px;
+    font-size: 30px;
     margin: 30px auto 20px auto;
     display: flex;
     max-height: 50%;
