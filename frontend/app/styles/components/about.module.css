@@ -37,7 +37,7 @@
 .container {
   width: auto;
   height: 120vh;
-  background-color: rgb(44, 44, 44);
+  background-color: linear-gradient(44, 44, 44);
   border-radius: 20px;
   border: 1px solid grey;
   text-align: center;
