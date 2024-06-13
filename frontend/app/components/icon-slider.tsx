@@ -52,6 +52,11 @@ export default function SkillSlider() {
           className={styles["skill-icon"]}
           alt="tensorflow icon"
         />
+        <Image
+          src={typescript}
+          className={styles["skill-icon"]}
+          alt="typescript icon"
+        />
       </div>
       <div className={styles["skill-slider"]}>
         <Image
