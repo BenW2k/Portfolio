@@ -11,6 +11,7 @@ import pandas from "../assets/media/icons/pandas.svg";
 import python from "../assets/media/icons/python.svg";
 import react from "../assets/media/icons/react.svg";
 import tensorflow from "../assets/media/icons/tensorflow.svg";
+import typescript from "../assets/media/icons/typescript.svg";
 
 export default function SkillSlider() {
   return (
@@ -87,6 +88,11 @@ export default function SkillSlider() {
           src={tensorflow}
           className={styles["skill-icon"]}
           alt="tensorflow icon"
+        />
+        <Image
+          src={typescript}
+          className={styles["skill-icon"]}
+          alt="typescript icon"
         />
       </div>
     </div>
