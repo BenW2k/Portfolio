@@ -12,8 +12,10 @@ interface Card {
 export default function Card(card: Card) {
   return (
     <div className={styles.cardContainer}>
-      <p>{card.quote}</p>
-      <Image src={card.img} alt="card-img" />
+      <div style={{backgroundColor: card.color}}>
+        <p>{card.quote}</p>
+        <Image src={card.img} alt="card-img" />
+      </div>
     </div>
   );
 }
