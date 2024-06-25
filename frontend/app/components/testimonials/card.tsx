@@ -4,7 +4,7 @@ import Image from "next/image";
 
 interface Card {
   quote: string;
-  img: string;
+  img: any;
   color: string;
   person: string;
 }
