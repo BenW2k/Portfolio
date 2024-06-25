@@ -13,6 +13,7 @@ import {
   stagger,
   delay,
 } from "framer-motion";
+import Testimonials from "./components/testimonials/testimonials";
 
 export default function Home() {
   const [scope, animate] = useAnimate();
@@ -88,7 +89,9 @@ export default function Home() {
       <div className={styles["timeline"]}>
         <Timeline />
       </div>
-      <div></div>
+      <div>
+        <Testimonials />
+      </div>
     </div>
   );
 }
