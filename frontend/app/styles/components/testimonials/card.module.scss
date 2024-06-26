@@ -9,8 +9,13 @@
   .card {
     position: relative;
     top: -10%;
-    width: 1000px;
-    height: 500px;
+    width: 60vw;
+    height: 40vh;
     border-radius: 25px;
+    border: rgba(144, 101, 194, 0.753) solid 2px;
+  }
+  .quote {
+    font-size: 24px;
+    margin: 50px 30px 20px 30px;
   }
 }
