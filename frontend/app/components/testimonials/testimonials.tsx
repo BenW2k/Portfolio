@@ -2,7 +2,8 @@ import {testimonials} from "./data";
 import styles from "../../styles/components/testimonials/testimonials.module.css";
 import Card from "./card";
 import {motion, useScroll} from "framer-motion";
-import {useRef} from "react";
+import {useEffect, useRef} from "react";
+import Lenis from "lenis";
 
 export default function Testimonials() {
   const container = useRef(null);
@@ -10,6 +11,17 @@ export default function Testimonials() {
     target: container,
     offset: ["start start", "end end"],
   });
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <main ref={container} className={styles.main}>
       {testimonials.map((testimonial, index) => {
