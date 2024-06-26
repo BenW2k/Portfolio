@@ -18,4 +18,10 @@
 .cardContainer .quote {
   font-size: 24px;
   margin: 50px 30px 20px 30px;
+}
+.cardContainer .card-bottom {
+  font-size: 20px;
+}
+.cardContainer .card-bottom .person {
+  font-weight: 700;
 }/*# sourceMappingURL=card.module.css.map */
