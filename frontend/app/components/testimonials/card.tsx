@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/components/testimonials/card.module.css";
+import {motion, useTransform} from "framer-motion";
 
 interface Card {
   quote: string;
@@ -8,17 +9,19 @@ interface Card {
   person: string;
   company: string;
   i: number;
-  range?: [number, number];
+  range?: any;
   targetScale?: number;
   progress: any;
 }
 
 export default function Card(card: Card) {
+  const scale = useTransform(card.progress, card.range, [1, card.targetScale]);
   return (
     <div className={styles.cardContainer}>
-      <div
+      <motion.div
         className={styles.card}
         style={{
+          scale,
           backgroundColor: card.color,
           top: `calc(-10% + ${card.i * 25}px)`,
         }}
@@ -32,7 +35,7 @@ export default function Card(card: Card) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
