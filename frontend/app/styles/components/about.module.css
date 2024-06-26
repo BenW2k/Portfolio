@@ -35,6 +35,7 @@
   src: url("../../assets/fonts/Satoshi-LightItalic.otf") format("opentype");
 }
 .container {
+  background-color: cadetblue;
   width: auto;
   height: 120vh;
   background-color: linear-gradient(44, 44, 44);
