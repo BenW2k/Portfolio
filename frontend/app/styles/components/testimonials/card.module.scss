@@ -8,20 +8,31 @@
   margin: 0;
   .card {
     position: relative;
-    top: -10%;
     width: 60vw;
     height: 40vh;
     border-radius: 25px;
     border: rgba(144, 101, 194, 0.753) solid 2px;
   }
+  .card-contents {
+    margin: 100px 50px 100px 100px;
+  }
   .quote {
     font-size: 24px;
-    margin: 50px 30px 20px 30px;
+    margin: 0px 0px 50px 0px;
   }
+
   .card-bottom {
     font-size: 20px;
-    .person {
-      font-weight: 700;
+    justify-content: right;
+    display: flex;
+    .from {
+      text-align: right;
+      p {
+        margin: 0px 0px 10px 0px;
+      }
+      .person {
+        font-weight: 700;
+      }
     }
   }
 }

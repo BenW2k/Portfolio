@@ -9,19 +9,29 @@
 }
 .cardContainer .card {
   position: relative;
-  top: -10%;
   width: 60vw;
   height: 40vh;
   border-radius: 25px;
   border: rgba(144, 101, 194, 0.753) solid 2px;
 }
+.cardContainer .card-contents {
+  margin: 100px 50px 100px 100px;
+}
 .cardContainer .quote {
   font-size: 24px;
-  margin: 50px 30px 20px 30px;
+  margin: 0px 0px 50px 0px;
 }
 .cardContainer .card-bottom {
   font-size: 20px;
+  justify-content: right;
+  display: flex;
 }
-.cardContainer .card-bottom .person {
+.cardContainer .card-bottom .from {
+  text-align: right;
+}
+.cardContainer .card-bottom .from p {
+  margin: 0px 0px 10px 0px;
+}
+.cardContainer .card-bottom .from .person {
   font-weight: 700;
 }/*# sourceMappingURL=card.module.css.map */
