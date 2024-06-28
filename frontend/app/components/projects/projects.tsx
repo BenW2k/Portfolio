@@ -2,6 +2,7 @@ import {useScroll, useTransform, motion} from "framer-motion";
 import styles from "../../styles/components/projects.module.css";
 import Image from "next/image";
 import {useRef} from "react";
+import Lenis from "lenis";
 
 const images: Array<string> = [
   "connor_1.png",
