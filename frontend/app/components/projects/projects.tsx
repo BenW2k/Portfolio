@@ -1,4 +1,4 @@
-import {useScroll, useTransform} from "framer-motion";
+import {useScroll, useTransform, motion} from "framer-motion";
 import styles from "../../styles/components/projects.module.css";
 import Image from "next/image";
 import {useRef} from "react";
@@ -13,32 +13,39 @@ const images: Array<string> = [
   "port_1.png",
 ];
 
-interface ColumnProps {
-  images: any;
-}
-
-const Column = ({images}: ColumnProps) => {
-  return (
-    <div className={styles.column}>
-      {images.map((src: string, index: number) => {
-        return (
-          <div key={index} className={styles.imageContainer}>
-            <Image src={`/${src}`} fill alt="image" />
-          </div>
-        );
-      })}
-    </div>
-  );
-};
-
 export default function Projects() {
+  const container = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+
+  interface ColumnProps {
+    images: any;
+  }
+
+  const Column = ({images}: ColumnProps) => {
+    return (
+      <motion.div style={{y}} className={styles.column}>
+        {images.map((src: string, index: number) => {
+          return (
+            <div key={index} className={styles.imageContainer}>
+              <Image src={`/${src}`} fill alt="image" />
+            </div>
+          );
+        })}
+      </motion.div>
+    );
+  };
+
+  const y = useTransform(scrollYProgress, [0, 1], [0, 1000]);
   return (
     <main className={styles.main}>
-      <div className={styles.gallery}>
+      <div ref={container} className={styles.gallery}>
         <Column images={[images[0], images[1], images[2]]} />
+        <Column images={[images[3], images[4], images[5]]} />
         <Column images={[images[0], images[1], images[2]]} />
-        <Column images={[images[0], images[1], images[2]]} />
-        <Column images={[images[0], images[1], images[2]]} />
+        <Column images={[images[3], images[4], images[5]]} />
       </div>
     </main>
   );
