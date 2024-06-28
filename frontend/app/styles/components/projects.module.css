@@ -1,1 +1,21 @@
-/*# sourceMappingURL=projects.module.css.map */
+.gallery {
+  height: 175vh;
+  background: rgb(45, 45, 45);
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  padding: 2vw;
+  box-sizing: border-box;
+}
+.gallery .column {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.gallery .column .imageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}/*# sourceMappingURL=projects.module.css.map */
