@@ -1,6 +1,7 @@
 import {useScroll, useTransform} from "framer-motion";
 import styles from "../../styles/components/projects.module.css";
 import Image from "next/image";
+import {useRef} from "react";
 
 const images: Array<string> = [
   "connor_1.png",
