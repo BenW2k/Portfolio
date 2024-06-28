@@ -93,7 +93,7 @@ export default function Home() {
       <div>
         <Testimonials />
       </div>
-      <div>
+      <div className={styles.projects}>
         <Projects />
       </div>
     </div>
