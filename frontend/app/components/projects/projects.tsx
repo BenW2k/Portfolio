@@ -1,4 +1,4 @@
-import styles from "../styles/components/projects.module.css";
+import styles from "../../styles/components/projects.module.css";
 import Image from "next/image";
 import img1 from "../assets/media/connor_1.png";
 import img2 from "../assets/media/connor_2.png";
@@ -8,7 +8,7 @@ import img5 from "../assets/media/placeholder-image.svg";
 import img6 from "../assets/media/placeholder-image.svg";
 import img7 from "../assets/media/connor_2.png";
 
-const images: object = [
+const images: Array<string> = [
   "../../assets/media/connor_1.png",
   "../../assets/media/connor_2.png",
   "../../assets/media/port_1.png",
@@ -18,7 +18,11 @@ const images: object = [
   "../../assets/media/placeholder-image.svg",
 ];
 
-const Column = ({images}: {images: any[]}) => {
+interface ColumnProps {
+  images: any;
+}
+
+const Column = ({images}: ColumnProps) => {
   return (
     <div className={styles.column}>
       {images.map((src: string, index: number) => {
@@ -33,5 +37,14 @@ const Column = ({images}: {images: any[]}) => {
 };
 
 export default function Projects() {
-  return <p>hello world</p>;
+  return (
+    <main className={styles.main}>
+      <div>
+        <Column images={(images[0], images[1], images[2])} />
+        <Column images={(images[0], images[1], images[2])} />
+        <Column images={(images[0], images[1], images[2])} />
+        <Column images={(images[0], images[1], images[2])} />
+      </div>
+    </main>
+  );
 }
