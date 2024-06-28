@@ -14,6 +14,7 @@ import {
   delay,
 } from "framer-motion";
 import Testimonials from "./components/testimonials/testimonials";
+import Projects from "./components/projects/projects";
 
 export default function Home() {
   const [scope, animate] = useAnimate();
@@ -91,6 +92,9 @@ export default function Home() {
       </div>
       <div>
         <Testimonials />
+      </div>
+      <div>
+        <Projects />
       </div>
     </div>
   );
