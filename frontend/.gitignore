@@ -38,3 +38,5 @@ next-env.d.ts
 *.css.map
 *.sass.map
 *.scss.map
+
+keys.tsx
