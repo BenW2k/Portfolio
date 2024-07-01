@@ -31,7 +31,12 @@ function Font() {
   };
   return (
     <group>
-      <Text font={src} position={[0, 0, -0.1]} fontSize={0.12} {...textOption}>
+      <Text
+        font={src}
+        position={[0, 0.1, -0.1]}
+        fontSize={0.12}
+        {...textOption}
+      >
         Let's Break The Ice
       </Text>
       <Text
