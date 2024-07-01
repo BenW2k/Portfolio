@@ -15,6 +15,7 @@ import {
 } from "framer-motion";
 import Testimonials from "./components/testimonials/testimonials";
 import Projects from "./components/projects/projects";
+import Contact from "./components/contact/contact";
 
 export default function Home() {
   const [scope, animate] = useAnimate();
@@ -95,6 +96,9 @@ export default function Home() {
       </div>
       <div className={styles.projects}>
         <Projects />
+      </div>
+      <div className={styles.contact}>
+        <Contact />
       </div>
     </div>
   );
