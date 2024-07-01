@@ -1,78 +1,68 @@
-import React, {useRef} from "react";
-import {useGLTF} from "@react-three/drei";
+import {
+  useGLTF,
+  Text,
+  Float,
+  MeshTransmissionMaterial,
+} from "@react-three/drei";
+import React from "react";
+import {useThree} from "@react-three/fiber";
+import {useControls} from "leva";
 
-export function Model(props) {
-  const {nodes, materials} = useGLTF("/glass.glb");
+export default function Model() {
+  const {viewport} = useThree();
+  const {nodes} = useGLTF("/glass.glb");
+
   return (
-    <group {...props} dispose={null}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve.geometry}
-        material={materials.SVGMat}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve001.geometry}
-        material={materials["SVGMat.001"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve002.geometry}
-        material={materials["SVGMat.002"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve003.geometry}
-        material={materials["SVGMat.003"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve004.geometry}
-        material={materials["SVGMat.004"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve005.geometry}
-        material={materials["SVGMat.005"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve006.geometry}
-        material={materials["SVGMat.006"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve007.geometry}
-        material={materials["SVGMat.007"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve008.geometry}
-        material={materials["SVGMat.008"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve009.geometry}
-        material={materials["SVGMat.009"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve010.geometry}
-        material={materials["SVGMat.010"]}
-      />
+    <group scale={viewport.width / 1.5}>
+      {nodes.Scene.children.map((mesh, i) => {
+        return <Mesh data={mesh} key={i} />;
+      })}
+      <Font />
     </group>
   );
 }
 
-useGLTF.preload("/glass.glb");
+function Font() {
+  const src = "PPNeueMontreal-Regular.ttf";
+  const textOption = {
+    color: "white",
+    anchorX: "center",
+    anchorY: "middle",
+  };
+  return (
+    <group>
+      <Text font={src} position={[0, 0, -0.1]} fontSize={0.08} {...textOption}>
+        Let's Break The Ice
+      </Text>
+      <Text
+        font={src}
+        position={[0, -0.1, -0.1]}
+        fontSize={0.03}
+        {...textOption}
+      >
+        Let's Chat
+      </Text>
+    </group>
+  );
+}
+
+function Mesh({data}) {
+  const materialProps = useControls({
+    thickness: {value: 0.275, min: 0, max: 1, step: 0.01},
+    ior: {value: 1.8, min: 0, max: 3, step: 0.1},
+    chromaticAberration: {value: 0.75, min: 0, max: 1},
+    resolution: {value: 300},
+  });
+
+  return (
+    <Float>
+      <mesh {...data}>
+        <MeshTransmissionMaterial
+          roughness={0}
+          transmission={0.99}
+          {...materialProps}
+        />
+      </mesh>
+    </Float>
+  );
+}
