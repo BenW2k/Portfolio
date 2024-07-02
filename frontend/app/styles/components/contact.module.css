@@ -34,6 +34,18 @@
   font-family: Satoshi-Light-Italic;
   src: url("../../assets/fonts/Satoshi-LightItalic.otf") format("opentype");
 }
+@font-face {
+  font-family: Migra-ExtraBold;
+  src: url("../../assets/fonts/Migra-Extrabold.otf") format("opentype");
+}
+@font-face {
+  font-family: Migra-Extralight;
+  src: url("../../assets/fonts/Migra-Extrabold.otf") format("opentype");
+}
+@font-face {
+  font-family: Satoshi-Light-Italic;
+  src: url("../../assets/fonts/Satoshi-LightItalic.otf") format("opentype");
+}
 .contactForm {
   height: 75vh;
   width: 100vw;
@@ -44,7 +56,9 @@
   display: flex;
 }
 .contactForm h2 {
-  font-size: 64px;
+  font-size: 42px;
+  width: 20vw;
+  color: white;
 }
 
 .form {
@@ -54,6 +68,9 @@
   border: 1px solid white;
   border-radius: 20px;
   justify-content: center;
+}
+.form input {
+  font-family: Satoshi-Regular, sans-serif;
 }
 
 .field {
@@ -65,15 +82,16 @@
   font-size: 1.2rem;
   background-color: rgb(39, 39, 39);
   color: white;
-  padding: 25px 0px 10px 20px;
+  padding: 15px 10px 15px 15px;
   margin: 10px;
-}
-.field .message {
-  padding-bottom: 150px;
 }
 .field input::-moz-placeholder {
   color: rgb(8, 20, 122);
 }
 .field input::placeholder {
   color: rgb(9, 22, 136);
+}
+
+.message {
+  padding-bottom: 200px;
 }/*# sourceMappingURL=contact.module.css.map */
