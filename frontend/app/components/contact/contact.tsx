@@ -15,29 +15,43 @@ export default function Contact() {
 
       <div className={styles.contactForm}>
         <div className={styles.formContainer}>
-          <h2 className={styles.contactTitle}>
-            Let's discuss how I can be of assistance
-          </h2>
+          <h2 className={styles.contactTitle}>Drop Me A Message</h2>
           <form className={styles.form}>
             {/* <label>
               {" "}
               "My Name" <p>*</p>
             </label> */}
-            <input
-              type="text"
-              className={styles.field}
-              placeholder="Your Name"
-            />
-            <input
-              type="text"
-              className={styles.field}
-              placeholder="example@gmail.com"
-            />
-            <input
-              type="text"
-              className={`${styles.field} ${styles.message}`}
-              placeholder="Example Text"
-            />
+
+            <div className={styles.question}>
+              <p>
+                Name<span> *</span>
+              </p>
+              <input
+                type="text"
+                className={styles.field}
+                placeholder="John Doe"
+              />
+            </div>
+            <div className={styles.question}>
+              <p>
+                Email Address<span> *</span>
+              </p>
+              <input
+                type="text"
+                className={styles.field}
+                placeholder="john@doe.com"
+              />
+            </div>
+            <div className={styles.question}>
+              <p>
+                Message<span> *</span>
+              </p>
+              <input
+                type="text"
+                className={`${styles.field} ${styles.message}`}
+                placeholder="Example Text"
+              />
+            </div>
           </form>
         </div>
       </div>
