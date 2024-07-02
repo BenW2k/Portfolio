@@ -56,46 +56,52 @@
   display: flex;
 }
 .contactForm h2 {
-  font-size: 42px;
-  width: 20vw;
+  font-size: 84px;
   color: white;
 }
 
 .formContainer {
-  width: 50%;
+  width: 75%;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
   border-radius: 20px;
   align-items: center;
 }
 
 .form {
   display: inline-block;
-  width: 60%;
+  width: 50vw;
 }
 .form input {
   font-family: Satoshi-Regular, sans-serif;
+}
+
+.question {
+  font-size: 1.2rem;
+}
+.question p {
+  color: white;
+  margin: 0;
+  padding: 5px;
+}
+.question p span {
+  color: red;
 }
 
 .field {
   border: none;
   border-bottom: white 2px solid;
   background: none;
-  width: 25vw;
+  width: 50vw;
   outline: none;
   font-size: 1.2rem;
   color: white;
   padding: 5px 5px 5px 5px;
-  margin: 10px;
+  margin: 0px 0px 50px 0px;
 }
 .field input::-moz-placeholder {
   color: rgb(8, 20, 122);
 }
 .field input::placeholder {
   color: rgb(9, 22, 136);
-}
-
-.message {
-  padding-bottom: 200px;
 }/*# sourceMappingURL=contact.module.css.map */
