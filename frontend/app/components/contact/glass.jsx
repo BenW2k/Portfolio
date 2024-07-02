@@ -44,9 +44,7 @@ function Font() {
         position={[0, -0.1, -0.1]}
         fontSize={0.03}
         {...textOption}
-      >
-        Let's Chat
-      </Text>
+      ></Text>
     </group>
   );
 }
