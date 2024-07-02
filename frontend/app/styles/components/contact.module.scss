@@ -1,3 +1,5 @@
+@use "variables";
+
 .contactForm {
   height: 75vh;
   width: 100vw;
@@ -23,13 +25,18 @@
   border: none;
   // border-bottom: white 2px solid;
   background: none;
-  width: 40vw;
+  border-radius: 10px;
+  width: 25vw;
   outline: none;
   font-size: 1.2rem;
   background-color: rgb(39, 39, 39);
   color: white;
   padding: 25px 0px 10px 20px;
   margin: 10px;
+
+  .message {
+    padding-bottom: 150px;
+  }
 
   input::-webkit-input-placeholder {
     color: rgb(5, 12, 78);
@@ -42,8 +49,4 @@
   input::placeholder {
     color: rgb(9, 22, 136);
   }
-}
-
-.message {
-  padding-bottom: 150px;
 }
