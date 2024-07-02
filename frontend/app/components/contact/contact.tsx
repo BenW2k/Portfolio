@@ -12,16 +12,36 @@ export default function Contact() {
   return (
     <main className="relative h-screen">
       <Scene />
+
       <div className={styles.contactForm}>
-        <h2 className={styles.title}>Contact Me</h2>
+        <h2 className={styles.contactTitle}>Contact Me</h2>
         <form className={styles.form}>
-          <input type="text" className={styles.field} placeholder="Your Name" />
-          <input
-            type="text"
-            className={styles.field}
-            placeholder="example@gmail.com"
-          />
-          <input type="text" className={styles.field} placeholder="..." />
+          <div>
+            {/* <label>
+              {" "}
+              "My Name" <p>*</p>
+            </label> */}
+            <input
+              type="text"
+              className={styles.field}
+              placeholder="Your Name"
+            />
+          </div>
+          <div>
+            <label></label>
+            <input
+              type="text"
+              className={styles.field}
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              className={`${styles.field} ${styles.message}`}
+              placeholder="..."
+            />
+          </div>
         </form>
       </div>
     </main>
