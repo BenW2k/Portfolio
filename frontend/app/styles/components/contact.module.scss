@@ -7,22 +7,29 @@
   justify-content: center;
   display: flex;
   h2 {
-    color: white;
+    font-size: 64px;
   }
 }
 
 .form {
+  display: flex;
   width: 50%;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 20px;
+  justify-content: center;
 }
 .field {
   border: none;
-  border-bottom: white 2px solid;
+  // border-bottom: white 2px solid;
   background: none;
   width: 40vw;
   outline: none;
   font-size: 1.2rem;
+  background-color: rgb(39, 39, 39);
   color: white;
-  padding: 50px 0px 10px 0px;
+  padding: 25px 0px 10px 20px;
+  margin: 10px;
 
   input::-webkit-input-placeholder {
     color: rgb(5, 12, 78);
@@ -38,5 +45,5 @@
 }
 
 .message {
-  padding-bottom: 40px;
+  padding-bottom: 150px;
 }
