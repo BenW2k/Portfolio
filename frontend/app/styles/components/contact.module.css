@@ -64,6 +64,7 @@
 .contactForm h2 {
   font-size: 76px;
   color: white;
+  margin-block-end: 30px;
 }
 
 .formContainer {
