@@ -33,7 +33,7 @@ function Font() {
     <group>
       <Text
         font={src}
-        position={[0, 0.1, -0.1]}
+        position={[0, 0.2, -0.1]}
         fontSize={0.12}
         {...textOption}
       >
