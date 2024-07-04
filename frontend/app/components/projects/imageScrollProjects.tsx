@@ -15,7 +15,7 @@ const images: Array<string> = [
   "port_1.png",
 ];
 
-export default function Projects() {
+export default function scrollProjects() {
   const container = useRef(null);
   const {height} = useDimension();
   const {scrollYProgress} = useScroll({
