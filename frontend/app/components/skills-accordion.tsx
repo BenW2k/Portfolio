@@ -76,7 +76,9 @@ export default function Skills() {
               <li>PyTorch</li>
               <li>Scikit-Learn</li>
               <li>OpenCV</li>
-              <li></li>
+              <li>NLTK</li>
+              <li>XGBoost</li>
+              <li>Keras</li>
             </ul>
           </div>
           <button
@@ -102,6 +104,8 @@ export default function Skills() {
           >
             <ul className={styles["list-points"]}>
               <li>PowerBI</li>
+              <li>Pandas</li>
+              <li>NumPy</li>
               <li>Seaborn</li>
               <li>Matplotlib</li>
               <li>R</li>
@@ -133,8 +137,9 @@ export default function Skills() {
             <ul className={styles["list-points"]}>
               <li>Git</li>
               <li>Microsoft Azure</li>
-              <li></li>
-              <li></li>
+              <li>Jira</li>
+              <li>Unit Testing</li>
+              <li>Excel</li>
             </ul>
           </div>
         </div>
