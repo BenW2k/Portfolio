@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/components/contact/glass.jsx"
+    "app/components/contact/glass.jsx",
+    "app/components/projects/imageScrollProjects.tsx"
   ],
   "exclude": ["node_modules"]
 }
