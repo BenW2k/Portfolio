@@ -1,0 +1,24 @@
+.container {
+  height: 300vh;
+  position: relative;
+  .sticky {
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    height: 100vh;
+    .el {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .titleContainer {
+        position: relative;
+        width: 25vw;
+        height: 25vh;
+      }
+    }
+  }
+}
