@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .skills {
   height: 150vh;
   width: auto;
@@ -34,6 +35,17 @@
 }
 .skill-title span {
   font-size: 60px;
+  padding-right: 30px;
+}
+
+.list-points {
+  font-size: 32px;
+  list-style: none;
+}
+.list-points li:before {
+  content: "✤";
+  color: white;
+  padding-right: 10px;
 }
 
 .skills-body {

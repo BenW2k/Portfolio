@@ -39,9 +39,19 @@
   padding: 0;
   span {
     font-size: 60px;
+    padding-right: 30px;
   }
 }
 
+.list-points {
+  font-size: 32px;
+  list-style: none;
+  li:before {
+    content: "✤";
+    color: white;
+    padding-right: 10px;
+  }
+}
 .skills-body {
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
   .show {
