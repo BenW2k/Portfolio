@@ -27,8 +27,8 @@ export default function Skills() {
                 console.log(val);
               }}
             >
+              <span>✦</span>
               <h1>Software Development</h1>
-              <span>{val === 2 ? "-" : "+"}</span>
             </button>
             <div
               className={
@@ -56,8 +56,8 @@ export default function Skills() {
               console.log(val);
             }}
           >
+            <span>✦</span>
             <h1>Machine Learning</h1>
-            <span>{val === 3 ? "-" : "+"}</span>
           </button>
           <div
             className={
@@ -84,8 +84,8 @@ export default function Skills() {
               console.log(val);
             }}
           >
+            <span>✦</span>
             <h1>Data Science</h1>
-            <span>{val === 4 ? "-" : "+"}</span>
           </button>
           <div
             className={
@@ -112,8 +112,8 @@ export default function Skills() {
               console.log(val);
             }}
           >
+            <span>✦</span>
             <h1>Other</h1>
-            <span>{val === 5 ? "-" : "+"}</span>
           </button>
           <div
             className={
