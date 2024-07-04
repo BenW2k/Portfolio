@@ -41,12 +41,13 @@
 }
 
 .list-points {
+  margin-left: 5vw;
   display: flex;
   flex-wrap: wrap;
   font-size: 32px;
   list-style: none;
   flex-direction: column;
-  height: 25vh;
+  height: 20vh;
 }
 .list-points li:before {
   content: "✤";
