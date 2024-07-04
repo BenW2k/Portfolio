@@ -5,7 +5,7 @@
 
 .dummy-container {
   // padding-top: 200px;
-  margin: 0 20vw 0 20vw;
+  margin: 0 15vw 0 20vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,11 +27,13 @@
 .skill-title {
   h1 {
     font-size: 92px;
+    margin: 0;
   }
   cursor: pointer;
   color: white;
   // line-height: 94px;
   display: flex;
+  text-transform: uppercase;
   justify-content: space-between;
   align-items: center;
   background: none;
@@ -44,8 +46,12 @@
 }
 
 .list-points {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 32px;
   list-style: none;
+  flex-direction: column;
+  height: 25vh;
   li:before {
     content: "✤";
     color: white;

@@ -5,7 +5,7 @@
 }
 
 .dummy-container {
-  margin: 0 20vw 0 20vw;
+  margin: 0 15vw 0 20vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +24,7 @@
   cursor: pointer;
   color: white;
   display: flex;
+  text-transform: uppercase;
   justify-content: space-between;
   align-items: center;
   background: none;
@@ -32,6 +33,7 @@
 }
 .skill-title h1 {
   font-size: 92px;
+  margin: 0;
 }
 .skill-title span {
   font-size: 60px;
@@ -39,8 +41,12 @@
 }
 
 .list-points {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 32px;
   list-style: none;
+  flex-direction: column;
+  height: 25vh;
 }
 .list-points li:before {
   content: "✤";
