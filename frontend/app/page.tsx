@@ -14,7 +14,7 @@ import {
   delay,
 } from "framer-motion";
 import Testimonials from "./components/testimonials/testimonials";
-import Projects from "./components/projects/imageScrollProjects";
+import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
 
 export default function Home() {
