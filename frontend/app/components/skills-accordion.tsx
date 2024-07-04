@@ -12,7 +12,7 @@ export default function Skills() {
     <div className={styles["skills"]}>
       <div className={styles["dummy-container"]}>
         <div className={styles["container-title"]}>
-          <h1>Techniques & Skills</h1>
+          <h1>Technical Skills</h1>
         </div>
         <div className={styles["accordion"]}>
           <div className={styles["skill-panel"]}>
@@ -37,12 +37,17 @@ export default function Skills() {
                   : styles["hidden"]
               }
             >
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id
-                est asperiores, consequuntur, praesentium perspiciatis beatae
-                voluptatem incidunt aut quo iusto quae magni vitae architecto,
-                cum aliquid minus inventore. Laboriosam!
-              </p>
+              <ul className={styles["list-points"]}>
+                <li>Typescript</li>
+                <li>Sass</li>
+                <li>React</li>
+                <li>NextJS</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>Spring</li>
+              </ul>
             </div>
           </div>
           <button
@@ -66,12 +71,13 @@ export default function Skills() {
                 : styles["hidden"]
             }
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id
-              est asperiores, consequuntur, praesentium perspiciatis beatae
-              voluptatem incidunt aut quo iusto quae magni vitae architecto, cum
-              aliquid minus inventore. Laboriosam!
-            </p>
+            <ul className={styles["list-points"]}>
+              <li>TensorFlow</li>
+              <li>PyTorch</li>
+              <li>Scikit-Learn</li>
+              <li>OpenCV</li>
+              <li></li>
+            </ul>
           </div>
           <button
             className={styles["skill-title"]}
@@ -94,12 +100,14 @@ export default function Skills() {
                 : styles["hidden"]
             }
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id
-              est asperiores, consequuntur, praesentium perspiciatis beatae
-              voluptatem incidunt aut quo iusto quae magni vitae architecto, cum
-              aliquid minus inventore. Laboriosam!
-            </p>
+            <ul className={styles["list-points"]}>
+              <li>PowerBI</li>
+              <li>Seaborn</li>
+              <li>Matplotlib</li>
+              <li>R</li>
+              <li>Selenium</li>
+              <li>BeautifulSoup</li>
+            </ul>
           </div>
           <button
             className={styles["skill-title"]}
@@ -122,12 +130,12 @@ export default function Skills() {
                 : styles["hidden"]
             }
           >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id
-              est asperiores, consequuntur, praesentium perspiciatis beatae
-              voluptatem incidunt aut quo iusto quae magni vitae architecto, cum
-              aliquid minus inventore. Laboriosam!
-            </p>
+            <ul className={styles["list-points"]}>
+              <li>Git</li>
+              <li>Microsoft Azure</li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
         </div>
       </div>
