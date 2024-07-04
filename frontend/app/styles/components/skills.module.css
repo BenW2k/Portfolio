@@ -1,14 +1,13 @@
 .skills {
-  height: 100vh;
+  height: 150vh;
   width: auto;
-  color: cyan;
 }
 
 .dummy-container {
-  padding-top: 200px;
   margin: 0 20vw 0 20vw;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 .dummy-container .container-title {
   background: none;
@@ -23,13 +22,15 @@
 .skill-title {
   cursor: pointer;
   color: white;
-  font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: none;
   border: none;
   padding: 0;
+}
+.skill-title h1 {
+  font-size: 92px;
 }
 .skill-title span {
   font-size: 60px;
