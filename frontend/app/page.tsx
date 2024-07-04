@@ -16,6 +16,7 @@ import {
 import Testimonials from "./components/testimonials/testimonials";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
+import Skills from "./components/skills-accordion";
 
 export default function Home() {
   const [scope, animate] = useAnimate();
@@ -87,6 +88,9 @@ export default function Home() {
       </div>
       <div className={styles["about"]}>
         <About />
+      </div>
+      <div className={styles.skills}>
+        <Skills />
       </div>
       <div className={styles["timeline"]}>
         <Timeline />
