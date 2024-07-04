@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
 import styles from "../../styles/components/contact.module.css";
-import {useState, useRef} from "react";
+import {useState, useRef, useEffect} from "react";
+import {useScroll, motion, useTransform} from "framer-motion";
+import Lenis from "lenis";
 import emailjs from "@emailjs/browser";
 import {formKey} from "./keys";
 
@@ -9,11 +11,31 @@ const Scene = dynamic(() => import("@/app/components/contact/Scene"), {
 });
 
 export default function Contact() {
+  const scene = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: scene,
+    offset: ["start start", "center center"],
+  });
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
+  // const shiftUp = useTransform(scrollYProgress, [0, 1], [0]);
   return (
     <main className="relative h-screen">
-      <Scene />
+      <div className={styles.sceneContainer} ref={scene}>
+        <Scene />
+      </div>
 
-      <div className={styles.contactForm}>
+      <motion.div className={styles.contactForm}>
         <div className={styles.formContainer}>
           <h2 className={styles.contactTitle}>Drop Me A Message</h2>
           <form className={styles.form}>
@@ -54,7 +76,7 @@ export default function Contact() {
             </div>
           </form>
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 }
