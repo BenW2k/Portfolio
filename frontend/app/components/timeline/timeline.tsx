@@ -3,7 +3,6 @@ import {useEffect, useRef} from "react";
 import Image from "next/image";
 import placeholder from "../../assets/media/placeholder-image.svg";
 import {motion, useScroll, useTransform} from "framer-motion";
-import {TracingBeam} from "../tracing-beam";
 
 export default function Timeline() {
   const container = useRef(null);
@@ -30,7 +29,7 @@ export default function Timeline() {
             viewport={{amount: "all"}}
             className={`${styles["container"]} ${styles["point1"]}`}
           >
-            <div className={`${styles["text-box"]} ${styles["right-side"]}`}>
+            <div className={styles["text-box"]}>
               <h2>BSc Business Management</h2>
               <h4>Swansea University</h4>
               <small>Oct 2018 - July 2021</small>
@@ -46,7 +45,7 @@ export default function Timeline() {
             {/* <div className={styles["roadmap-point"]}></div> */}
             <Image
               src={placeholder}
-              className={`${styles["roadmap-image"]} ${styles["left-side"]}`}
+              className={styles["roadmap-image"]}
               alt="placeholder"
             />
           </motion.div>
@@ -56,7 +55,7 @@ export default function Timeline() {
             viewport={{amount: "all"}}
             className={`${styles["container"]} ${styles["point2"]}`}
           >
-            <div className={`${styles["text-box"]} ${styles["left-side"]}`}>
+            <div className={styles["text-box"]}>
               <h2>MSc Financial Technology</h2>
               <h4>Swansea University</h4>
               <small>Sept 2023 - Nov 2023</small>
@@ -71,7 +70,7 @@ export default function Timeline() {
             {/* <div className={styles["roadmap-point"]}></div> */}
             <Image
               src={placeholder}
-              className={`${styles["roadmap-image"]} ${styles["right-side"]}`}
+              className={`${styles["roadmap-image"]} ${styles["left-side"]}`}
               alt="placeholder"
             />
           </motion.div>
@@ -81,7 +80,7 @@ export default function Timeline() {
             viewport={{amount: "all"}}
             className={`${styles["container"]} ${styles["point-3"]}`}
           >
-            <div className={`${styles["text-box"]} ${styles["right-side"]}`}>
+            <div className={styles["text-box"]}>
               <h2>Placeholder Name</h2>
               <h4>Synergy Construction Ltd.</h4>
               <small>Sept 2023 - Nov 2023</small>
@@ -95,7 +94,7 @@ export default function Timeline() {
             </div>
             <Image
               src={placeholder}
-              className={`${styles["roadmap-image"]} ${styles["left-side"]}`}
+              className={styles["roadmap-image"]}
               alt="placeholder"
             />
           </motion.div>
@@ -106,7 +105,7 @@ export default function Timeline() {
             viewport={{amount: "all"}}
             className={`${styles["container"]} ${styles["point4"]}`}
           >
-            <div className={`${styles["text-box"]} ${styles["left-side"]}`}>
+            <div className={styles["text-box"]}>
               <h2>Freelance Full-stack Engineer</h2>
               <h4>Self-employed</h4>
               <small>Nov 2023 - Present</small>
@@ -122,7 +121,7 @@ export default function Timeline() {
             <div className={styles["roadmap-point"]}></div>
             <Image
               src={placeholder}
-              className={`${styles["roadmap-image"]} ${styles["right-side"]}`}
+              className={styles["roadmap-image"]}
               alt="placeholder"
             />
           </motion.div>
