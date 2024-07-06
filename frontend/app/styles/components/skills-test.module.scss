@@ -1,0 +1,92 @@
+.skills {
+  position: relative;
+  height: 400vh;
+  margin-left: 5vw;
+}
+
+.book {
+  margin-left: 5vw;
+  height: 80vh;
+  width: auto;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.title {
+  z-index: 1;
+  grid-column-gap: 0.25rem;
+  grid-row-gap: 0.25rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1em;
+  display: flex;
+  position: relative;
+  h1 {
+    margin: 0;
+  }
+  .t1 {
+    font-size: 192px;
+    line-height: 150px;
+    span {
+      font-size: 58px;
+      font-style: italic;
+    }
+  }
+  .t2 {
+    font-size: 192px;
+    line-height: 150px;
+    // transform: rotate(0.98turn);
+  }
+  .t3 {
+    font-size: 192px;
+    margin-right: 0;
+    margin-left: auto;
+    width: 70%;
+  }
+}
+
+.section {
+  margin-right: 10vh;
+  display: grid;
+  position: relative;
+  grid-column-gap: 0rem;
+  grid-row-gap: 2rem;
+  grid-template-rows: auto;
+  grid-template-columns: 40% 60%;
+  grid-auto-columns: 1fr;
+  padding-top: 5px;
+  border-bottom: 1px solid #fff;
+  .section-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .list-points {
+    flex-wrap: wrap;
+    font-size: 18px;
+    list-style: none;
+    flex-direction: column;
+    // height: 20vh;
+    li:before {
+      content: "✤";
+      color: white;
+      padding-right: 10px;
+    }
+  }
+  .section-body {
+    font-size: 20px;
+    margin-top: 5vh;
+    font-weight: 500;
+  }
+}
