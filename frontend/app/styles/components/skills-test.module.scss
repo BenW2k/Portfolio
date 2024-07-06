@@ -11,6 +11,7 @@
   position: absolute;
   z-index: -1;
   overflow: hidden;
+  margin-top: 10px;
 }
 
 .container {
@@ -56,6 +57,7 @@
 }
 
 .section {
+  margin-top: 20px;
   margin-right: 10vh;
   display: grid;
   position: relative;
