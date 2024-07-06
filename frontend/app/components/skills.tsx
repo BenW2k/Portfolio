@@ -10,7 +10,6 @@ export default function Skills() {
           <span>My</span>Problem
         </h1>
         <h1 className={styles.t2}>Solving Powers</h1>
-        {/* <h1 className={styles.t3}>Powers</h1> */}
       </div>
       <Image src={book} className={styles.book} alt="book-img" />
       <div className={styles.container}>
