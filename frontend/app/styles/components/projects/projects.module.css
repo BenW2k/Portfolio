@@ -1,24 +1,14 @@
-.container {
-  height: 300vh;
-  position: relative;
-}
-.container .sticky {
-  position: sticky;
-  overflow: hidden;
-  top: 0;
-  height: 100vh;
-}
-.container .sticky .el {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  position: absolute;
+.main {
   display: flex;
+  height: 100vh;
   align-items: center;
   justify-content: center;
 }
-.container .sticky .el .titleContainer {
-  position: relative;
-  width: 25vw;
-  height: 25vh;
+
+.body {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=projects.module.css.map */
