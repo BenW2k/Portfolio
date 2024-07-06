@@ -16,7 +16,7 @@ import {
 import Testimonials from "./components/testimonials/testimonials";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
-import Skills from "./components/skills-accordion";
+import Skills from "./components/skills";
 
 export default function Home() {
   const [scope, animate] = useAnimate();
