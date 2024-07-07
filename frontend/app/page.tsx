@@ -95,11 +95,11 @@ export default function Home() {
       <div className={styles["timeline"]}>
         <Timeline />
       </div>
-      <div>
-        <Testimonials />
-      </div>
       <div className={styles.projects}>
         <Projects />
+      </div>
+      <div>
+        <Testimonials />
       </div>
       <div className={styles.contact}>
         <Contact />
