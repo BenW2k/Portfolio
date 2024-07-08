@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import "./styles/global.css";
+import Navbar from "./components/navbar";
 
 const inter = {subsets: ["latin"]};
 
@@ -15,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Navbar />
       <body>{children}</body>
     </html>
   );
