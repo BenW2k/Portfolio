@@ -1,11 +1,12 @@
 import placeholder from "../../assets/media/placeholder-image.svg";
+import test from "../../assets/media/face-nobg.png";
 
 export const testimonials = [
   {
     quote:
       "First ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     img: placeholder,
-    color: "rgba(232, 236, 255, 1)",
+    color: "#ABABAB",
     person: "Mark",
     company: "Synergy Construction",
     i: 1,
