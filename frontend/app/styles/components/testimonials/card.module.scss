@@ -1,36 +1,57 @@
 .cardContainer {
-  height: 100vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
+  // position: sticky;
   top: 0px;
   margin: 0;
   .card {
+    top: -100px;
     position: relative;
     width: 60vw;
-    height: 40vh;
-    border-radius: 25px;
-    border: rgba(144, 101, 194, 0.753) solid 2px;
+    height: auto;
+    // border-radius: 25px;
+    // border: rgba(144, 101, 194, 0.753) solid 2px;
   }
-  .card-contents {
-    margin: 100px 50px 100px 100px;
-  }
+  // .card-contents {
+  //   margin: 100px 50px 100px 100px;
+  // }
   .quote {
     font-size: 24px;
     margin: 0px 0px 50px 0px;
   }
 
+  .image {
+    display: flex;
+    justify-self: right;
+    padding-left: 5vw;
+  }
+
+  .card-contents {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+  }
+
+  .card-text {
+    // max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
   .card-bottom {
     font-size: 20px;
-    justify-content: right;
+    justify-content: left;
     display: flex;
     .from {
-      text-align: right;
+      text-align: left;
       p {
         margin: 0px 0px 10px 0px;
       }
       .person {
+        font-size: 32px;
         font-weight: 700;
       }
     }
