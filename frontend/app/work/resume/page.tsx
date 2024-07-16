@@ -1,11 +1,15 @@
 "use client";
 import Image from "next/image";
 import styles from "../../styles/work/synergy/synergy.module.css";
-import img from "../../assets/media/placeholder-image.svg";
+import img from "../../../public/connor_1.png";
+import img2 from "../../assets/media/placeholder-image.svg";
 
 export default function Synergy() {
   return (
     <div className={styles.content}>
+      <div className={styles.header}>
+        <h1 className={styles["page-title"]}>Level Designer Portfolio</h1>
+      </div>
       <Image src={img} className={styles.img1} alt="image" />
       <div className={styles.container1}>
         <div className={styles.section1}>
