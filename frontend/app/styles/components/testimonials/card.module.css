@@ -9,12 +9,21 @@
 .cardContainer .card {
   top: -100px;
   position: relative;
-  width: 60vw;
+  width: 75vw;
   height: auto;
 }
 .cardContainer .quote {
   font-size: 24px;
   margin: 0px 0px 50px 0px;
+}
+.cardContainer .quote-mark {
+  max-height: 200px;
+  width: auto;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: auto;
+  top: -100px;
 }
 .cardContainer .image {
   display: flex;
