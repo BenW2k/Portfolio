@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import quote from "./quotes.svg";
+import quote from "../../assets/media/quotes.svg";
 import Image from "next/image";
 import styles from "../../styles/components/testimonials/card.module.css";
 import {motion, useInView, useTransform} from "framer-motion";
@@ -28,13 +28,14 @@ export default function Card(card: Card) {
         className={styles.card}
       >
         <div className={styles["card-contents"]}>
+          <Image src={quote} className={styles["quote-mark"]} alt="image" />
           <motion.div
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             viewport={{amount: "all"}}
             className={styles["card-text"]}
           >
-            <p className={styles.quote}>{card.quote}</p>
+            <p className={styles.quote}>"{card.quote}"</p>
             <div className={styles["card-bottom"]}>
               <div className={styles.from}>
                 <p className={styles.person}>{card.person}</p>
