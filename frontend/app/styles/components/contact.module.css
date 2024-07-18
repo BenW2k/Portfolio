@@ -138,4 +138,21 @@
 }
 .field input::placeholder {
   color: rgb(9, 22, 136);
+}
+
+.submitContainer {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.submitContainer .submit {
+  cursor: pointer;
+  font-family: Satoshi-Regular, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 20px 50px;
+  border-radius: 25px;
+  background-color: black;
+  border: white 1px solid;
+  color: white;
 }/*# sourceMappingURL=contact.module.css.map */
