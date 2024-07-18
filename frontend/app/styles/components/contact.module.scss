@@ -1,5 +1,25 @@
 @use "variables";
 
+// Mask CSS
+.container {
+  position: relative;
+  height: 300vh;
+  background-color: #fffafa;
+}
+.sticky-mask {
+  display: flex;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  mask-image: url("../../assets//media/icons/envelope.svg");
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: 80%;
+}
+
 .sceneContainer {
   position: sticky;
   top: 0px;
