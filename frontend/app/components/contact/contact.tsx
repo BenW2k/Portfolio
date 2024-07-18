@@ -11,7 +11,9 @@ const Scene = dynamic(() => import("@/app/components/contact/Scene"), {
 });
 
 export default function Contact() {
+  const container = useRef<HTMLInputElement>(null);
   const scene = useRef(null);
+  const stickyMask = useRef<HTMLInputElement>(null);
   const {scrollYProgress} = useScroll({
     target: scene,
     offset: ["start start", "center center"],
@@ -28,11 +30,47 @@ export default function Contact() {
     requestAnimationFrame(raf);
   }, []);
 
+  const initialMaskSize = 0.8;
+
+  const targetMaskSize = 30;
+
+  useEffect(() => {
+    requestAnimationFrame(animate);
+  }, []);
+
+  const animate = () => {
+    if (!stickyMask.current || !container.current) {
+      return; // Handle the case where refs are not yet assigned
+    }
+    const maskSizeProgress = targetMaskSize * getScrollProgress();
+
+    stickyMask.current.style.webkitMaskSize =
+      (initialMaskSize + maskSizeProgress) * 100 + "%";
+
+    requestAnimationFrame(animate);
+  };
+
+  const getScrollProgress = () => {
+    const containerRect = container.current?.getBoundingClientRect();
+    if (!stickyMask.current || !containerRect) {
+      return 0; // Handle the case where containerRect is null
+    }
+    const scrollProgress =
+      stickyMask.current.offsetTop /
+      (containerRect.height - window.innerHeight);
+
+    return scrollProgress;
+  };
+
   // const shiftUp = useTransform(scrollYProgress, [0, 1], [0]);
   return (
     <main className="relative h-screen">
-      <div className={styles.sceneContainer} ref={scene}>
-        <Scene />
+      <div ref={container} className={styles.container}>
+        <div ref={stickyMask} className={styles["sticky-mask"]}>
+          <div className={styles.sceneContainer} ref={scene}>
+            <Scene />
+          </div>
+        </div>
       </div>
 
       <motion.div className={styles.contactForm}>
