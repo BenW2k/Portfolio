@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import "./styles/global.css";
-import Navbar from "./components/navbar";
+import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 
 const inter = {subsets: ["latin"]};
 
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
