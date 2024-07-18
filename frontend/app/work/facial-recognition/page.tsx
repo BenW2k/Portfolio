@@ -2,6 +2,8 @@
 import Image from "next/image";
 import styles from "../../styles/work/synergy/synergy.module.css";
 import img from "../../assets/media/placeholder-image.svg";
+import fr_1 from "../../../public/FR_1.png";
+import fr_2 from "../../../public/FR_2.png";
 
 export default function FacialRecognition() {
   const toRotate = ["Personal Project", "Facial Recognition"];
@@ -11,7 +13,7 @@ export default function FacialRecognition() {
       <div className={styles.header}>
         <h1 className={styles["page-title"]}>Facial Recognition</h1>
       </div>
-      <Image src={img} className={styles.img1} alt="image" />
+      <Image src={fr_1} className={styles.img1} alt="image" />
       <div className={styles.container1}>
         <div className={styles.section1}>
           <h3 className={styles["section-title"]}>Mission</h3>
@@ -39,7 +41,7 @@ export default function FacialRecognition() {
           </div>
         </div>
       </div>
-      <Image src={img} className={styles.img2} alt="image" />
+      <Image src={fr_2} className={styles.img2} alt="image" />
       <div className={styles.container2}>
         <div className={styles.section2}>
           <h3 className={styles["section-title"]}>Features</h3>
