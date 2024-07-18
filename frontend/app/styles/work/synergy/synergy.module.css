@@ -16,9 +16,9 @@
 }
 
 .img1 {
-  margin-top: 7vh;
+  margin-top: 3vh;
   margin-left: 7vw;
-  height: 40vh;
+  height: 50vh;
   width: 30vw;
   position: absolute;
   z-index: -1;
@@ -82,8 +82,8 @@
 .img2 {
   margin-top: 7vh;
   margin-right: 7vw;
-  height: 40vh;
-  width: auto;
+  height: auto;
+  width: 30vw;
   right: 0;
   position: absolute;
   z-index: -1;
