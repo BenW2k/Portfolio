@@ -112,6 +112,9 @@ export default function Contact() {
                 placeholder="Example Text"
               />
             </div>
+            <div className={styles.submitContainer}>
+              <button className={styles.submit}>Send</button>
+            </div>
           </form>
         </div>
       </motion.div>
