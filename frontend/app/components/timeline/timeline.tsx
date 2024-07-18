@@ -6,23 +6,25 @@ import {motion, useScroll, useTransform} from "framer-motion";
 
 export default function Timeline() {
   const container = useRef(null);
+  // const {height} = useDimension();
   const {scrollYProgress} = useScroll({
     target: container,
-    offset: ["start start", "end end"],
+    // offset: ["start start", "end center"],
   });
 
-  const scaleLine = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   return (
-    <div>
-      <div className={styles["timeline-container"]}>
-        <div className={styles["timeline"]}>
-          <motion.div
-            viewport={{amount: "all"}}
-            className={styles["timeline-header"]}
-          >
-            <h1>Heading</h1>
-          </motion.div>
+    <div className={styles["timeline-container"]}>
+      <div ref={container} className={styles["timeline"]}>
+        <motion.div
+          viewport={{amount: "all"}}
+          className={styles["timeline-header"]}
+        >
+          <h1>Heading</h1>
+        </motion.div>
+
+        <div className={styles.framerContainer}>
           <div className={styles["vertical-line"]}></div>
           <motion.div
             initial={{opacity: 0}}
@@ -42,8 +44,9 @@ export default function Timeline() {
                 vel tempore expedita reprehenderit! Omnis nobis dolore vero!
               </p>
             </div>
-
-            {/* <div className={styles["roadmap-point"]}></div> */}
+            <div
+              className={`${styles["roadmap-point"]} ${styles["left"]}`}
+            ></div>
           </motion.div>
           <motion.div
             initial={{opacity: 0}}
@@ -63,6 +66,9 @@ export default function Timeline() {
                 vel tempore expedita reprehenderit! Omnis nobis dolore vero!
               </p>
             </div>
+            <div
+              className={`${styles["roadmap-point"]} ${styles["right"]}`}
+            ></div>
           </motion.div>
           <motion.div
             initial={{opacity: 0}}
@@ -82,6 +88,9 @@ export default function Timeline() {
                 vel tempore expedita reprehenderit! Omnis nobis dolore vero!
               </p>
             </div>
+            <div
+              className={`${styles["roadmap-point"]} ${styles["left"]}`}
+            ></div>
           </motion.div>
           <motion.div
             ref={container}
@@ -102,6 +111,9 @@ export default function Timeline() {
                 vel tempore expedita reprehenderit! Omnis nobis dolore vero!
               </p>
             </div>
+            <div
+              className={`${styles["roadmap-point"]} ${styles["right"]}`}
+            ></div>
           </motion.div>
         </div>
       </div>
