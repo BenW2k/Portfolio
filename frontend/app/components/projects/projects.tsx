@@ -11,40 +11,48 @@ export default function Projects() {
     {
       title: "Synergy",
 
-      src: {place},
+      src: place,
 
       color: "#000000",
 
       type: "Fullstack Development",
+
+      href: "/work/synergy",
     },
 
     {
       title: "Client Portfolio",
 
-      src: {place},
+      src: place,
 
       color: "#8C8C8C",
 
       type: "Frontend Development",
+
+      href: "/work/resume",
     },
 
     {
       title: "Facial Recognition App",
 
-      src: {place},
+      src: place,
 
       color: "#EFE8D3",
 
       type: "Machine Learning",
+
+      href: "/work/facial-recognition",
     },
 
     {
       title: "Unsure",
 
-      src: {place},
+      src: place,
 
       color: "#706D63",
       type: "Machine Learning",
+
+      href: "/work/facial-recognition",
     },
   ];
 
@@ -61,6 +69,7 @@ export default function Projects() {
               setModal={setModal}
               key={index}
               type={project.type}
+              href={project.href}
             />
           );
         })}
