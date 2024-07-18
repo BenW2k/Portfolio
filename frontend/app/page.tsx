@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "./components/navbar";
 import About from "./components/about";
 import Timeline from "./components/timeline/timeline";
 import {useEffect} from "react";
@@ -70,9 +69,6 @@ export default function Home() {
 
   return (
     <div ref={scope}>
-      <div id="navbar-div" className={styles["navbar"]}>
-        <Navbar />
-      </div>
       <div ref={scope} className={styles["hero-section"]}>
         <h1 id="hero-title" className={styles["hero-title"]}>
           Hello
