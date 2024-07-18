@@ -49,21 +49,27 @@ function Font() {
   );
 }
 
+// useControls(
+
 function Mesh({data}) {
-  const materialProps = useControls({
-    thickness: {value: 0.275, min: 0, max: 1, step: 0.01},
-    ior: {value: 1.8, min: 0, max: 3, step: 0.1},
-    chromaticAberration: {value: 0.75, min: 0, max: 1},
-    resolution: {value: 300},
-  });
+  // const materialProps = {
+  //   thickness: {value: 0.275, min: 0, max: 1, step: 0.01},
+  //   ior: {value: 1.8, min: 0, max: 3, step: 0.1},
+  //   chromaticAberration: {value: 0.75, min: 0, max: 1},
+  //   resolution: {value: 300},
+  // };
 
   return (
     <Float>
       <mesh {...data}>
         <MeshTransmissionMaterial
+          ior={1.8}
+          thickness={0.275}
+          chromaticAberration={0.75}
+          resolution={300}
           roughness={0}
           transmission={0.99}
-          {...materialProps}
+          // {...materialProps}
         />
       </mesh>
     </Float>
