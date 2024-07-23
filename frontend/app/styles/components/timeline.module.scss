@@ -17,6 +17,8 @@
 }
 .framerContainer {
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .vertical-line {
@@ -25,7 +27,7 @@
   top: 5vh;
   left: 50%;
   width: 3px;
-  height: 90vh;
+  height: 120.4vh;
   background-color: #00fcfc;
 }
 
@@ -106,7 +108,7 @@
   // transform: translateY(-150%);
   z-index: -1;
   position: absolute;
-  width: 2.8vw;
+  width: 2.7vw;
   height: 3px;
   background-color: #00fcfc;
   // left: 44%;
