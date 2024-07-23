@@ -84,13 +84,13 @@
 .roadmap-point {
   z-index: -1;
   position: absolute;
-  width: 5.5vw;
+  width: 2.8vw;
   height: 3px;
   background-color: #00fcfc;
 }
 
 .left {
-  left: 44%;
+  left: 47%;
 }
 
 .right {
