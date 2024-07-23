@@ -2,9 +2,30 @@
   overflow: hidden;
 }
 
+.header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 10vh;
+}
+.header h1 {
+  margin: 0;
+}
+.header .video-background {
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 65vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  overflow: hidden;
+}
+
 .page-title {
-  font-size: 85px;
+  font-size: 150px;
   text-align: center;
+  padding: 200px 0px;
+  z-index: 1;
 }
 
 .container1 {
@@ -19,7 +40,18 @@
   margin-top: 3vh;
   margin-left: 7vw;
   height: 50vh;
-  width: 30vw;
+  width: 50vh;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.img2 {
+  margin-top: 7vh;
+  margin-right: 7vw;
+  height: 50vh;
+  width: 50vh;
+  right: 0;
   position: absolute;
   z-index: -1;
   overflow: hidden;
@@ -77,15 +109,4 @@
   font-size: 20px;
   margin-top: 5vh;
   font-weight: 500;
-}
-
-.img2 {
-  margin-top: 7vh;
-  margin-right: 7vw;
-  height: auto;
-  width: 30vw;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  overflow: hidden;
 }/*# sourceMappingURL=synergy.module.css.map */
