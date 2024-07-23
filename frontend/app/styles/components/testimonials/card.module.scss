@@ -1,5 +1,5 @@
 .cardContainer {
-  height: 75vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,9 +9,8 @@
   .card {
     top: -100px;
     position: relative;
-    width: 75vw;
+    width: 60vw;
     height: auto;
-    // border-radius: 25px;
     // border: rgba(144, 101, 194, 0.753) solid 2px;
   }
   // .card-contents {

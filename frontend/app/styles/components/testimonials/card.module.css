@@ -1,5 +1,5 @@
 .cardContainer {
-  height: 75vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,7 @@
 .cardContainer .card {
   top: -100px;
   position: relative;
-  width: 75vw;
+  width: 60vw;
   height: auto;
 }
 .cardContainer .quote {
