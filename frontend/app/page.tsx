@@ -21,51 +21,51 @@ export default function Home() {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope);
 
-  // useEffect(() => {
-  //   if (isInView) {
-  //     const heroAnimation = async () => {
-  //       await animate(
-  //         "#hero-title",
-  //         {opacity: 1},
-  //         {duration: 1, ease: "easeInOut"}
-  //       );
-  //       await animate("#hero-paragraph", {opacity: 1}, {duration: 1});
-  //       await animate("#hero-span-1", {color: "#ffffff"}, {duration: 0.25});
-  //       await animate(
-  //         "#hero-span-1",
-  //         {color: "#ffffff99"},
-  //         {duration: 0.5, delay: 0.75}
-  //       );
-  //       await animate("#hero-span-2", {color: "#ffffff"}, {duration: 0.25});
-  //       await animate(
-  //         "#hero-span-2",
-  //         {color: "#ffffff99"},
-  //         {duration: 0.25, delay: 0.75}
-  //       );
-  //       await animate("#hero-span-3", {color: "#ffffff"}, {duration: 0.25});
-  //       await animate(
-  //         "#hero-span-3",
-  //         {color: "#ffffff99"},
-  //         {duration: 0.25, delay: 0.75}
-  //       );
-  //       await animate("#hero-span-4", {color: "#ffffff"}, {duration: 0.25});
-  //       await animate(
-  //         "#hero-span-4",
-  //         {color: "#ffffff99"},
-  //         {duration: 0.25, delay: 0.75}
-  //       );
-  //       await animate("#hero-span-5", {color: "#ffffff"}, {duration: 0.25});
-  //       await animate(
-  //         "#hero-span-5",
-  //         {color: "#ffffff99"},
-  //         {duration: 0.25, delay: 0.75}
-  //       );
-  //       await animate("#name-span", {color: "#66CCCC"}, {duration: 1});
-  //       await animate("#navbar-div", {opacity: 1}, {duration: 1});
-  //     };
-  //     heroAnimation();
-  //   }
-  // }, [isInView]);
+  useEffect(() => {
+    if (isInView) {
+      const heroAnimation = async () => {
+        await animate(
+          "#hero-title",
+          {opacity: 1},
+          {duration: 1, ease: "easeInOut"}
+        );
+        await animate("#hero-paragraph", {opacity: 1}, {duration: 1});
+        await animate("#hero-span-1", {color: "#ffffff"}, {duration: 0.25});
+        await animate(
+          "#hero-span-1",
+          {color: "#ffffff99"},
+          {duration: 0.5, delay: 0.75}
+        );
+        await animate("#hero-span-2", {color: "#ffffff"}, {duration: 0.25});
+        await animate(
+          "#hero-span-2",
+          {color: "#ffffff99"},
+          {duration: 0.25, delay: 0.75}
+        );
+        await animate("#hero-span-3", {color: "#ffffff"}, {duration: 0.25});
+        await animate(
+          "#hero-span-3",
+          {color: "#ffffff99"},
+          {duration: 0.25, delay: 0.75}
+        );
+        await animate("#hero-span-4", {color: "#ffffff"}, {duration: 0.25});
+        await animate(
+          "#hero-span-4",
+          {color: "#ffffff99"},
+          {duration: 0.25, delay: 0.75}
+        );
+        await animate("#hero-span-5", {color: "#ffffff"}, {duration: 0.25});
+        await animate(
+          "#hero-span-5",
+          {color: "#ffffff99"},
+          {duration: 0.25, delay: 0.75}
+        );
+        await animate("#name-span", {color: "#66CCCC"}, {duration: 1});
+        await animate("#nav", {opacity: 1}, {duration: 1});
+      };
+      heroAnimation();
+    }
+  }, [isInView]);
 
   return (
     <div ref={scope}>
@@ -82,22 +82,23 @@ export default function Home() {
           <span id="hero-span-5"> Finance.</span>
         </p>
       </div>
-      <div className={styles["about"]}>
+      {/* <div className={styles["about"]}>
         <About />
-      </div>
-      <div className={styles.skills}>
-        <Skills />
-      </div>
-      <div className={styles["timeline"]}>
+      </div> */}
+
+      <div className={styles["timeline"]} id="timeline">
         <Timeline />
       </div>
-      <div className={styles.projects}>
+      <div className={styles.skills} id="skills">
+        <Skills />
+      </div>
+      <div className={styles.projects} id="projects">
         <Projects />
       </div>
-      <div>
+      <div id="testimonials">
         <Testimonials />
       </div>
-      <div className={styles.contact}>
+      <div className={styles.contact} id="contact">
         <Contact />
       </div>
     </div>
