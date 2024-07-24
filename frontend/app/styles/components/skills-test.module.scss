@@ -1,7 +1,7 @@
 .skills {
   position: relative;
-  height: 150vh;
-  margin-left: 5vw;
+  height: 125vh;
+  // margin-left: 5vw;
 }
 
 .book {
@@ -24,6 +24,7 @@
 
 .title {
   z-index: 1;
+  margin-left: 5vw;
   grid-column-gap: 0.25rem;
   grid-row-gap: 0.25rem;
   flex-flow: column;
