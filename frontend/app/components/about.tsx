@@ -44,9 +44,6 @@ export default function About() {
           </div>
           <div className={`${styles["glass"]}  ${styles["dummy"]} `}>Dummy</div>
         </div>
-        <div className={styles["logo-slider"]}>
-          <SkillSlider />
-        </div>
       </div>
     </div>
   );
