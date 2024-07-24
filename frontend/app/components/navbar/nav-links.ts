@@ -1,15 +1,15 @@
 export const links = [
   {
     title: "Work",
-    href: "/",
+    href: "#projects",
   },
   {
     title: "Timeline",
-    href: "/",
+    href: "#timeline",
   },
   {
     title: "Skills",
-    href: "/",
+    href: "#skills",
   },
   {
     title: "Forgot",
@@ -17,7 +17,7 @@ export const links = [
   },
   {
     title: "Contact",
-    href: "/",
+    href: "#contact",
   },
 ];
 
