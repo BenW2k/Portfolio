@@ -5,6 +5,7 @@ import {useScroll, motion, useTransform} from "framer-motion";
 import Lenis from "lenis";
 import emailjs from "@emailjs/browser";
 import {formKey} from "./keys";
+import next from "next";
 
 const Scene = dynamic(() => import("@/app/components/contact/Scene"), {
   ssr: false,
@@ -67,6 +68,9 @@ export default function Contact() {
     <main className="relative h-screen">
       <div ref={container} className={styles.container}>
         <div ref={stickyMask} className={styles["sticky-mask"]}>
+          {/* <video autoPlay muted loop className={styles["video-background"]}>
+            <source src="/globe_video.mp4" type="video/mp4" />
+          </video> */}
           <div className={styles.sceneContainer} ref={scene}>
             <Scene />
           </div>
