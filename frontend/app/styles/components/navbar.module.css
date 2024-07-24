@@ -55,7 +55,7 @@
 .header .menu {
   width: 480px;
   height: 650px;
-  background-color: #c9fd74;
+  background-color: rgb(102, 204, 204);
   border-radius: 25px;
   position: relative;
 }
@@ -78,7 +78,7 @@
 .button .slider .el {
   width: 100%;
   height: 100%;
-  background-color: #c9fd74;
+  background-color: rgb(102, 204, 204);
 }
 .button .slider .el p {
   margin: 0px;
@@ -87,7 +87,7 @@
   background-color: black;
 }
 .button .slider .el:nth-of-type(2) p {
-  color: #c9fd74;
+  color: rgb(102, 204, 204);
 }
 .button .slider .el:hover .perspectiveText {
   transform: rotateX(90deg);
