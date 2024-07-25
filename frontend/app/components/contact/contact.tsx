@@ -15,6 +15,45 @@ export default function Contact() {
   const container = useRef<HTMLInputElement>(null);
   const scene = useRef(null);
   const stickyMask = useRef<HTMLInputElement>(null);
+
+  const form = useRef();
+  const [message, setMessage] = useState("Message");
+  const [messageClass, setMessageClass] = useState("test");
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    if (!form.current) {
+      throw new Error("Error: Missing field");
+    }
+
+    emailjs
+      .sendForm("gmail", "resume_template", form.current, {
+        publicKey: formKey,
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setMessageClass("success");
+          console.log(messageClass);
+          setMessage("Your Message has been sent!");
+          setTimeout(() => {
+            setMessage("Message");
+          }, 4000);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setMessageClass("hello");
+          setMessage("Error! Please try again later.");
+          console.log(messageClass);
+          setTimeout(() => {
+            setMessage("Message");
+          }, 4000);
+        }
+      );
+    e.target.reset();
+  };
+
   const {scrollYProgress} = useScroll({
     target: scene,
     offset: ["start start", "center center"],
