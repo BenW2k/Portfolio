@@ -16,7 +16,7 @@ export default function Contact() {
   const scene = useRef(null);
   const stickyMask = useRef<HTMLInputElement>(null);
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
   const [message, setMessage] = useState("Message");
   const [messageClass, setMessageClass] = useState("test");
 
@@ -28,7 +28,7 @@ export default function Contact() {
     }
 
     emailjs
-      .sendForm("gmail", "resume_template", form.current, {
+      .sendForm("gmail", "ben_template", form.current, {
         publicKey: formKey,
       })
       .then(
@@ -119,7 +119,7 @@ export default function Contact() {
       <motion.div className={styles.contactForm}>
         <div className={styles.formContainer}>
           <h2 className={styles.contactTitle}>Drop Me A Message</h2>
-          <form className={styles.form}>
+          <form className={styles.form} ref={form} onSubmit={sendEmail}>
             {/* <label>
               {" "}
               "My Name" <p>*</p>
@@ -130,6 +130,7 @@ export default function Contact() {
                 Name<span> *</span>
               </p>
               <input
+                name="user_name"
                 type="text"
                 className={styles.field}
                 placeholder="John Doe"
@@ -140,6 +141,7 @@ export default function Contact() {
                 Email Address<span> *</span>
               </p>
               <input
+                name="user_email"
                 type="text"
                 className={styles.field}
                 placeholder="john@doe.com"
@@ -152,11 +154,13 @@ export default function Contact() {
               <input
                 type="text"
                 className={`${styles.field} ${styles.message}`}
-                placeholder="Example Text"
+                placeholder={message}
               />
             </div>
             <div className={styles.submitContainer}>
-              <button className={styles.submit}>Send</button>
+              <button type="submit" className={styles.submit}>
+                Send
+              </button>
             </div>
           </form>
         </div>
