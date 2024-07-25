@@ -2,6 +2,8 @@ import styles from "../../styles/components/projects/projects.module.css";
 import Image from "next/image";
 import Project from "./project";
 import Modal from "./modal";
+import fr from "../../../public/FR_1.png";
+import client from "../../../public/connor_1.png";
 import place from "../../assets/media/placeholder-image.svg";
 import {useScroll, useTransform, motion} from "framer-motion";
 import {useRef, useEffect, useState} from "react";
@@ -23,7 +25,7 @@ export default function Projects() {
     {
       title: "Client Portfolio",
 
-      src: place,
+      src: client,
 
       color: "#8C8C8C",
 
@@ -35,7 +37,7 @@ export default function Projects() {
     {
       title: "Facial Recognition App",
 
-      src: place,
+      src: fr,
 
       color: "#EFE8D3",
 
