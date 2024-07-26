@@ -30,7 +30,7 @@ export default function Testimonials() {
           <Card
             key={index}
             {...testimonial}
-            range={[testimonial.i * 0.33, 1]}
+            range={[testimonial.i * 0.25, 1]}
             progress={scrollYProgress}
             targetScale={targetScale}
           />
