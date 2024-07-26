@@ -61,7 +61,7 @@ export default function Home() {
           {duration: 0.25, delay: 0.75}
         );
         await animate("#name-span", {color: "#66CCCC"}, {duration: 1});
-        await animate("#nav", {opacity: 1}, {duration: 1});
+        // await animate("#navbar", {opacity: 1}, {duration: 1});
       };
       heroAnimation();
     }
