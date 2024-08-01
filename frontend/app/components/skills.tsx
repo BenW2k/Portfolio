@@ -7,12 +7,13 @@ export default function Skills() {
   return (
     <div>
       <div className={styles.skills}>
-        <div className={styles.title}>
+        <h1> My Technical Skills</h1>
+        {/* <div className={styles.title}>
           <h1 className={styles.t1}>
             <span>My</span>Problem
           </h1>
           <h1 className={styles.t2}>Solving Powers</h1>
-        </div>
+        </div> */}
         <Image src={book} className={styles.book} alt="book-img" />
         <div className={styles.container}>
           <div className={styles.section}>
