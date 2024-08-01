@@ -1,3 +1,16 @@
+.timeline-container {
+  padding-bottom: 40vh;
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 40vh;
+}
+.timeline-header h1 {
+  font-size: 64px;
+}
+
 .timeline {
   margin: 100px;
 }
