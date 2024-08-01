@@ -2,12 +2,13 @@ import placeholder from "../../assets/media/placeholder-image.svg";
 import test from "../../assets/media/face-nobg.png";
 import connor from "../../assets/media/connor_test.svg";
 import tnp from "../../assets/media/tnp_test.svg";
+import syn from "../../assets/media/syn_test.svg";
 
 export const testimonials = [
   {
     quote:
       "First ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-    img: connor,
+    img: syn,
     color: "white",
     person: "Mark",
     company: "Synergy Construction",
@@ -27,8 +28,8 @@ export const testimonials = [
       "Third ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     img: tnp,
     color: "white",
-    person: "Placeholder Name",
-    company: "Placeholder Company",
+    person: "Randall Bradach",
+    company: "Trials Ninja Points",
     i: 3,
   },
 ];
