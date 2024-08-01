@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 .header h1 {
   margin: 0;
@@ -19,6 +19,17 @@
   -o-object-fit: fill;
      object-fit: fill;
   overflow: hidden;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vh;
+}
+.view a {
+  text-decoration: none;
+  color: rgb(87, 252, 150);
+  font-size: 32px;
 }
 
 .page-title {

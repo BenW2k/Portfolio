@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
   h1 {
     margin: 0;
   }
@@ -17,6 +17,17 @@
     height: 65vh;
     object-fit: fill;
     overflow: hidden;
+  }
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vh;
+  a {
+    text-decoration: none;
+    color: rgb(87, 252, 150);
+    font-size: 32px;
   }
 }
 
