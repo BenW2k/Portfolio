@@ -51,6 +51,7 @@
   position: relative;
   height: 300vh;
   z-index: 1;
+  background-color: rgb(255, 255, 255);
 }
 
 .sticky-mask {
@@ -61,14 +62,14 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  -webkit-mask-image: url("../../assets//media/Contact-Mask.svg");
-          mask-image: url("../../assets//media/Contact-Mask.svg");
+  -webkit-mask-image: url("../../assets//media/mask2.svg");
+          mask-image: url("../../assets//media/mask2.svg");
   -webkit-mask-position: center center;
           mask-position: center center;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
-  -webkit-mask-size: 80%;
-          mask-size: 80%;
+  -webkit-mask-size: 150%;
+          mask-size: 150%;
   z-index: 3;
 }
 

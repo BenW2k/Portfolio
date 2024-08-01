@@ -7,6 +7,7 @@
   height: 300vh;
   // background: url("../../assets/media/globe_video.mp4");
   z-index: 1;
+  background-color: rgb(255, 255, 255);
 }
 
 .sticky-mask {
@@ -17,10 +18,10 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  mask-image: url("../../assets//media/Contact-Mask.svg");
+  mask-image: url("../../assets//media/mask2.svg");
   mask-position: center center;
   mask-repeat: no-repeat;
-  mask-size: 80%;
+  mask-size: 150%;
   z-index: 3;
 }
 .video-background {
