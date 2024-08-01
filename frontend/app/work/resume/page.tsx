@@ -4,7 +4,7 @@ import styles from "../../styles/work/synergy/synergy.module.css";
 import img from "../../../public/connor_1.png";
 import img2 from "../../assets/media/placeholder-image.svg";
 
-export default function Synergy() {
+export default function Resume() {
   return (
     <div className={styles.content}>
       <div className={styles.header}>
@@ -14,6 +14,15 @@ export default function Synergy() {
         <h1 className={styles["page-title"]}>Level Designer Portfolio</h1>
       </div>
       <Image src={img} className={styles.img1} alt="image" />
+      <div className={styles.view}>
+        <a
+          href="https://connorlarkin.co.uk/home"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Click here to view!
+        </a>
+      </div>
       <div className={styles.container1}>
         <div className={styles.section1}>
           <h3 className={styles["section-title"]}>Mission</h3>
