@@ -18,10 +18,12 @@ export default function Timeline() {
     <div className={styles["timeline-container"]}>
       <div ref={container} className={styles["timeline"]}>
         <motion.div
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
           viewport={{amount: "all"}}
           className={styles["timeline-header"]}
         >
-          <h1>Heading</h1>
+          <h1>Timeline</h1>
         </motion.div>
 
         <div className={styles.framerContainer}>
