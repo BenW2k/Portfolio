@@ -3,6 +3,11 @@
   position: relative;
   height: 125vh;
 }
+.skills h1 {
+  right: 0;
+  font-size: 64px;
+  text-align: center;
+}
 
 .book {
   margin-left: 5vw;
