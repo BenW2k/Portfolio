@@ -12,7 +12,7 @@ export default function Synergy() {
         </video>
         <h1 className={styles["page-title"]}>Attendance Tracker</h1>
       </div>
-      <Image src={img} className={styles.img1} alt="image" />
+      {/* <Image src={img} className={styles.img1} alt="image" /> */}
       <div className={styles.container1}>
         <div className={styles.section1}>
           <h3 className={styles["section-title"]}>Mission</h3>
@@ -40,7 +40,7 @@ export default function Synergy() {
           </div>
         </div>
       </div>
-      <Image src={img} className={styles.img2} alt="image" />
+      {/* <Image src={img} className={styles.img2} alt="image" /> */}
       <div className={styles.container2}>
         <div className={styles.section2}>
           <h3 className={styles["section-title"]}>Features</h3>
@@ -54,8 +54,14 @@ export default function Synergy() {
           <h3 className={styles["section-title"]}>Outcome</h3>
           <div className={styles["section-body"]}>
             <p> </p>
-            <p>▹ Backend: </p>
-            <p>▹ Skills: </p>
+            <p>
+              ▹ A hopeful replacement for paper sign-in sheets with automatic
+              digital back-up.{" "}
+            </p>
+            <p>
+              ▹ More accurate attendance data as employees can no longer
+              preemptively log their sign-out times.{" "}
+            </p>
           </div>
         </div>
       </div>
