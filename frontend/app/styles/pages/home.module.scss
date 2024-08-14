@@ -29,3 +29,23 @@
 }
 
 // **********Loader CSS**********
+
+@media (max-width: 550px) {
+  .hero-title {
+    font-size: 64px;
+  }
+  .hero-paragraph {
+    font-size: 18px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-title {
+    font-size: 80px;
+  }
+  .hero-paragraph {
+    font-size: 20px;
+    width: 50%;
+  }
+}
