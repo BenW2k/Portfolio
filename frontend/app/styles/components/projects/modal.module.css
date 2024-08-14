@@ -48,4 +48,20 @@
 
 .cursorLabel {
   background-color: transparent;
+}
+
+@media (max-width: 1250px) {
+  .modalContainer {
+    height: 250px;
+    width: 286px;
+  }
+}
+@media (max-width: 750px) {
+  .modalContainer {
+    height: 175px;
+    width: 200px;
+  }
+  .modal img {
+    width: 150px;
+  }
 }/*# sourceMappingURL=modal.module.css.map */
