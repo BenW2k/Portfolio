@@ -132,3 +132,19 @@
 // .message {
 //   padding-bottom: 100px;
 // }
+
+@media (max-width: 1000px) {
+  .contactForm {
+    h2 {
+      font-size: 48px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contactForm {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}

@@ -166,4 +166,15 @@
   background-color: black;
   border: white 2px solid;
   color: white;
+}
+
+@media (max-width: 1000px) {
+  .contactForm h2 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 500px) {
+  .contactForm h2 {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=contact.module.css.map */
