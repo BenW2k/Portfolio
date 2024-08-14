@@ -46,3 +46,26 @@
   color: white;
   padding-bottom: 5px;
 }
+
+@media (max-width: 1000px) {
+  .linkContainer {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .linkContainer {
+    width: 90vw;
+  }
+  .toTop {
+    font-size: 15px;
+    .upIcon {
+      font-size: 30px;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  .link {
+    font-size: 15px;
+  }
+}
