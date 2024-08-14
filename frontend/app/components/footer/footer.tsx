@@ -6,14 +6,15 @@ export default function Footer() {
       <div className={styles.linkContainer}>
         <div className={styles.navContainer}>
           <p className={styles.title}>Sitemap</p>
-          <a className={styles.link} href="">
-            Work
+          <a className={styles.link} href="#skills">
+            Skills
           </a>
-          <a className={styles.link} href="">
+
+          <a className={styles.link} href="#timeline">
             Timeline
           </a>
-          <a className={styles.link} href="">
-            Skills
+          <a className={styles.link} href="#projects">
+            Work
           </a>
         </div>
         <div className={styles.navContainer}>
@@ -26,13 +27,23 @@ export default function Footer() {
         </div>
         <div className={styles.navContainer}>
           <p className={styles.title}>Socials</p>
-          <a className={styles.link} href="">
+          <a
+            className={styles.link}
+            href="https://www.linkedin.com/in/ben-workman-ds/"
+            rel="noreferrer"
+            target="_blank"
+          >
             LinkedIn
           </a>
-          <a className={styles.link} href="">
+          <a
+            className={styles.link}
+            href="https://www.github.com/benw2k"
+            rel="noreferrer"
+            target="_blank"
+          >
             GitHub
           </a>
-          <a className={styles.link} href="">
+          <a className={styles.link} href="" rel="noreferrer" target="_blank">
             Instagram
           </a>
         </div>
