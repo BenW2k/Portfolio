@@ -53,4 +53,36 @@
 .cardContainer .card-bottom .from .person {
   font-size: 32px;
   font-weight: 700;
+}
+
+@media (max-width: 1500px) {
+  .cardContainer .card-contents {
+    margin: 80px 40px 80px 80px;
+  }
+  .cardContainer .quote {
+    font-size: 20px;
+  }
+  .cardContainer .card-bottom .from .person {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1000px) {
+  .cardContainer .card-contents {
+    margin: 60px 30px 60px 60px;
+  }
+  .cardContainer .quote {
+    font-size: 18px;
+  }
+  .cardContainer .card-bottom .from .person {
+    font-size: 24px;
+  }
+  .img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .cardContainer .card-bottom .from .person {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=card.module.css.map */
