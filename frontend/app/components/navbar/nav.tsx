@@ -29,6 +29,8 @@ export default function Nav() {
           const {title, href} = link;
           return (
             <motion.a
+              rel="noreferrer"
+              target="_blank"
               variants={slideIn}
               custom={i}
               initial="initial"
