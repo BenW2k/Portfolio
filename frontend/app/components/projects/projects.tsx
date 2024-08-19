@@ -1,19 +1,18 @@
 import styles from "../../styles/components/projects/projects.module.css";
-import Image from "next/image";
 import Project from "./project";
 import Modal from "./modal";
 import fr from "../../../public/FR_1.png";
 import client from "../../../public/connor_1.png";
-import place from "../../assets/media/placeholder-image.svg";
-import {useScroll, useTransform, motion} from "framer-motion";
-import {useRef, useEffect, useState} from "react";
+import syn from "../../assets/media/syn_test.svg";
+import sent from "../../../public/BI_1.png";
+import {useState} from "react";
 
 export default function Projects() {
   const projects = [
     {
       title: "Synergy",
 
-      src: place,
+      src: syn,
 
       color: "#000000",
 
@@ -47,14 +46,14 @@ export default function Projects() {
     },
 
     {
-      title: "Unsure",
+      title: "Sentiment Analysis",
 
-      src: place,
+      src: sent,
 
       color: "#706D63",
       type: "Machine Learning",
 
-      href: "/work/facial-recognition",
+      href: "/work/sentiment",
     },
   ];
 
