@@ -41,10 +41,12 @@ export default function Timeline() {
                 <small>Oct 2018 - July 2021</small>
                 <p>
                   {" "}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt voluptatibus commodi quae, maiores similique dolore
-                  culpa recusandae itaque, quos cupiditate corrupti repellendus,
-                  vel tempore expedita reprehenderit! Omnis nobis dolore vero!
+                  Grade: Upper Second-Class Honours.
+                  <br />
+                  Final Project: Data Analyst role in a collaborative project
+                  with a Welsh financial consulting company. Earned a CMI Level
+                  5 Certificate in Management and Leadership and awarded the
+                  Bronze Entrepreneurship Award.
                 </p>
               </div>
               <div
@@ -63,10 +65,12 @@ export default function Timeline() {
                 <small>Sept 2023 - Nov 2023</small>
                 <p>
                   {" "}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt voluptatibus commodi quae, maiores similique dolore
-                  culpa recusandae itaque, quos cupiditate corrupti repellendus,
-                  vel tempore expedita reprehenderit! Omnis nobis dolore vero!
+                  Grade: Upper Second-Class Honours.
+                  <br /> Relevant Coursework: Introduction to programming in
+                  Java - Big Data in Finance - Machine Learning - Quantitative
+                  Methods and Economics. <br />
+                  Thesis: How AI will affect the future of banking: An
+                  industrial Analysis report.
                 </p>
               </div>
               <div
@@ -85,10 +89,10 @@ export default function Timeline() {
                 <small>Sept 2023 - Nov 2023</small>
                 <p>
                   {" "}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt voluptatibus commodi quae, maiores similique dolore
-                  culpa recusandae itaque, quos cupiditate corrupti repellendus,
-                  vel tempore expedita reprehenderit! Omnis nobis dolore vero!
+                  Worked on a split whereby for 3 days of the week I was on site
+                  completing labouring tasks and 2 days of the week I was
+                  working on an attendance tracking system to take the company
+                  away from paper registration.
                 </p>
               </div>
               <div
@@ -108,10 +112,10 @@ export default function Timeline() {
                 <small>Nov 2023 - Present</small>
                 <p>
                   {" "}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt voluptatibus commodi quae, maiores similique dolore
-                  culpa recusandae itaque, quos cupiditate corrupti repellendus,
-                  vel tempore expedita reprehenderit! Omnis nobis dolore vero!
+                  Started taking clients for a multitude of software and web
+                  development tasks. The work has mainly been centered around
+                  full-stack web development but at times software development
+                  was required also.
                 </p>
               </div>
               <div
