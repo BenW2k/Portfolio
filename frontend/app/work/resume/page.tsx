@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import styles from "../../styles/work/synergy/synergy.module.css";
+import styles from "../../styles/work/projectPages/synergy.module.css";
 import img from "../../../public/connor_1.png";
-import img2 from "../../assets/media/placeholder-image.svg";
+import img2 from "../../../public/connor_2.png";
 
 export default function Resume() {
   return (
@@ -13,7 +13,9 @@ export default function Resume() {
         </video>
         <h1 className={styles["page-title"]}>Level Designer Portfolio</h1>
       </div>
-      <Image src={img} className={styles.img1} alt="image" />
+      <div className={styles.imgContainer}>
+        <Image src={img} className={styles["game-img1"]} alt="image" />
+      </div>
       <div className={styles.view}>
         <a
           href="https://connorlarkin.co.uk/home"
@@ -46,7 +48,7 @@ export default function Resume() {
           </div>
         </div>
       </div>
-      <Image src={img} className={styles.img2} alt="image" />
+      <Image src={img2} className={styles["game-img2"]} alt="image" />
       <div className={styles.container2}>
         <div className={styles.section2}>
           <h3 className={styles["section-title"]}>Features</h3>
