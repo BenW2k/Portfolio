@@ -1,5 +1,9 @@
 export const links = [
   {
+    title: "Home",
+    href: "/#home",
+  },
+  {
     title: "Work",
     href: "/#projects",
   },
@@ -13,7 +17,7 @@ export const links = [
   },
   {
     title: "Testimonials",
-    href: "/",
+    href: "/#testimonials",
   },
   {
     title: "Contact",
