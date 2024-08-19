@@ -12,7 +12,7 @@
 }
 
 .timeline {
-  margin: 100px;
+  margin: 10vw;
 }
 .framerContainer {
   text-decoration: none;
@@ -65,6 +65,7 @@
     opacity: 0.8;
   }
   p {
+    width: 80%;
     font-size: 18px;
     opacity: 0.6;
   }
@@ -94,11 +95,11 @@
 .left-side {
   left: 0;
   // grid-column: 1 / 2;
-  position: absolute;
+  position: relative;
 }
 
 .right-side {
-  left: 60%;
+  left: 65%;
   position: relative;
   // grid-column: 3 / 4;
 }
@@ -114,9 +115,11 @@
 }
 
 .left {
-  left: 47%;
+  position: absolute;
+  left: 46.6%;
 }
 .right {
+  position: absolute;
   left: 50%;
 }
 
