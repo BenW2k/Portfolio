@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import styles from "../../styles/work/projectPages/synergy.module.css";
-import img from "../../assets/media/placeholder-image.svg";
 import fr_1 from "../../../public/FR_1.png";
 import fr_2 from "../../../public/FR_2.png";
 
