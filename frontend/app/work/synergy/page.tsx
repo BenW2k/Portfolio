@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import styles from "../../styles/work/projectPages/synergy.module.css";
-import img from "../../assets/media/placeholder-image.svg";
 
 export default function Synergy() {
   return (
