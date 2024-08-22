@@ -1,7 +1,7 @@
 import {testimonials} from "./data";
 import styles from "../../styles/components/testimonials/testimonials.module.css";
 import Card from "./card";
-import {motion, useScroll} from "framer-motion";
+import {useScroll} from "framer-motion";
 import {useEffect, useRef} from "react";
 import Lenis from "lenis";
 
