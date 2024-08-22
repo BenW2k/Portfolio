@@ -7,11 +7,11 @@ import syn from "../../assets/media/syn_test.svg";
 export const testimonials = [
   {
     quote:
-      "First ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "Ben's hard-working nature and personability will be an asset to any team, his positive attitude and thoroughness made him a pleasure to work with. ",
     img: syn,
     color: "white",
-    person: "Mark",
-    company: "Synergy Construction",
+    person: "Synergy Construction",
+    company: "",
     i: 1,
   },
   {
@@ -25,7 +25,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Third ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "It was great collaborating with Ben. His expertise in frontend development offered a valuable perspective to the problem solving process. I would highly recommend working with Ben and I hope to do so again in the future.",
     img: tnp,
     color: "white",
     person: "Randall Bradach",
