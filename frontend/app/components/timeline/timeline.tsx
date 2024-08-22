@@ -1,7 +1,5 @@
 import styles from "../../styles/components/timeline.module.css";
-import {useEffect, useRef} from "react";
-import Image from "next/image";
-import placeholder from "../../assets/media/placeholder-image.svg";
+import {useRef} from "react";
 import {motion, useScroll, useTransform} from "framer-motion";
 
 export default function Timeline() {
