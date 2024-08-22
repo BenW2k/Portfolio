@@ -6,7 +6,6 @@ import {
 } from "@react-three/drei";
 import React from "react";
 import {useThree} from "@react-three/fiber";
-import {useControls} from "leva";
 
 export default function Model() {
   const {viewport} = useThree();
