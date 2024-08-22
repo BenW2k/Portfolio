@@ -1,8 +1,7 @@
 import React, {useRef} from "react";
-import quote from "../../assets/media/quotes.svg";
 import Image from "next/image";
 import styles from "../../styles/components/testimonials/card.module.css";
-import {motion, useInView, useTransform} from "framer-motion";
+import {motion, useTransform} from "framer-motion";
 
 interface Card {
   quote: string;
