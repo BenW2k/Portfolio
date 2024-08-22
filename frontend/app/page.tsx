@@ -65,7 +65,7 @@ export default function Home() {
           Hello
         </h1>
         <p id="hero-paragraph" className={styles["hero-paragraph"]}>
-          I'm <span id="name-span">Ben Workman</span>, a{" "}
+          I&apos;m <span id="name-span">Ben Workman</span>, a{" "}
           <span id="hero-span-1">Full-stack Software Engineer</span> with
           sub-specialties in <span id="hero-span-2">Web Development</span>,{" "}
           <span id="hero-span-3">Data Science</span>,{" "}
