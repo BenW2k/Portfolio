@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/components/skills-test.module.css";
-import book from "../assets/media/book.jpg";
+import book from "../assets/media/skills.jpg";
 import SkillSlider from "./icon-slider";
 
 export default function Skills() {
