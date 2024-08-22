@@ -4,7 +4,8 @@ import {useState, useRef, useEffect} from "react";
 import {useScroll, motion, useTransform} from "framer-motion";
 import Lenis from "lenis";
 import emailjs from "@emailjs/browser";
-import {formKey} from "./keys";
+// import {formKey} from "./keys";
+import process from "process";
 import next from "next";
 
 const Scene = dynamic(() => import("@/app/components/contact/Scene"), {
@@ -29,7 +30,7 @@ export default function Contact() {
 
     emailjs
       .sendForm("gmail", "ben_template", form.current, {
-        publicKey: formKey,
+        publicKey: process.env.NEXT_FORM_KEY,
       })
       .then(
         () => {
