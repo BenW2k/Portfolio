@@ -1,12 +1,11 @@
 import dynamic from "next/dynamic";
 import styles from "../../styles/components/contact.module.css";
 import {useState, useRef, useEffect} from "react";
-import {useScroll, motion, useTransform} from "framer-motion";
+import {useScroll, motion} from "framer-motion";
 import Lenis from "lenis";
 import emailjs from "@emailjs/browser";
 // import {formKey} from "./keys";
 import process from "process";
-import next from "next";
 
 const Scene = dynamic(() => import("@/app/components/contact/Scene"), {
   ssr: false,
