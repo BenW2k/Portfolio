@@ -39,4 +39,5 @@ next-env.d.ts
 *.sass.map
 *.scss.map
 
+imageScrollProjects.tsx
 keys.tsx
