@@ -36,7 +36,7 @@ function Font() {
         fontSize={0.12}
         {...textOption}
       >
-        Let's Break The Ice
+        Let&apos;s Break The Ice
       </Text>
       <Text
         font={src}
