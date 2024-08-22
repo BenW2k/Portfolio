@@ -1,17 +1,8 @@
 "use client";
-import About from "./components/about";
 import Timeline from "./components/timeline/timeline";
 import {useEffect} from "react";
-import Image from "next/image";
 import styles from "./styles/pages/home.module.css";
-import {
-  easeInOut,
-  motion,
-  useAnimate,
-  useInView,
-  stagger,
-  delay,
-} from "framer-motion";
+import {useAnimate, useInView} from "framer-motion";
 import Testimonials from "./components/testimonials/testimonials";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
