@@ -82,7 +82,34 @@
   }
 }
 @media (max-width: 600px) {
+  .cardContainer .quote {
+    font-size: 16px;
+  }
+  .cardContainer .card {
+    width: 80vw;
+  }
   .cardContainer .card-bottom .from .person {
     font-size: 18px;
+  }
+  .cardContainer .card-bottom .from .company {
+    font-size: 18px;
+  }
+}
+@media (max-width: 450px) {
+  .cardContainer .quote {
+    font-size: 15px;
+  }
+  .cardContainer .card {
+    width: 90vw;
+  }
+  .cardContainer .card-bottom .from .person {
+    font-size: 16px;
+  }
+  .cardContainer .card-bottom .from .company {
+    font-size: 16px;
+  }
+  .cardContainer .img {
+    width: 45px;
+    height: 45px;
   }
 }/*# sourceMappingURL=card.module.css.map */

@@ -104,12 +104,46 @@
 
 @media (max-width: 600px) {
   .cardContainer {
+    .quote {
+      font-size: 16px;
+    }
+    .card {
+      width: 80vw;
+    }
     .card-bottom {
       .from {
         .person {
           font-size: 18px;
         }
+        .company {
+          font-size: 18px;
+        }
       }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .cardContainer {
+    .quote {
+      font-size: 15px;
+    }
+    .card {
+      width: 90vw;
+    }
+    .card-bottom {
+      .from {
+        .person {
+          font-size: 16px;
+        }
+        .company {
+          font-size: 16px;
+        }
+      }
+    }
+    .img {
+      width: 45px;
+      height: 45px;
     }
   }
 }
