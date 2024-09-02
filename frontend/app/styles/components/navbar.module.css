@@ -156,4 +156,10 @@
   text-decoration: none;
   width: 50%;
   margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+  .header {
+    visibility: hidden;
+  }
 }/*# sourceMappingURL=navbar.module.css.map */
