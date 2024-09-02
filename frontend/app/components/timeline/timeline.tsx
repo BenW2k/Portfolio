@@ -82,7 +82,7 @@ export default function Timeline() {
               className={`${styles["container"]} ${styles["point-3"]}`}
             >
               <div className={`${styles["text-box"]} ${styles["left-side"]}`}>
-                <h2>Placeholder Name</h2>
+                <h2>Software Development and Labouring</h2>
                 <h4>Synergy Construction Ltd.</h4>
                 <small>Sept 2023 - Nov 2023</small>
                 <p>
