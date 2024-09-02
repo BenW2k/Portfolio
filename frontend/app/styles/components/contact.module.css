@@ -177,4 +177,13 @@
   .contactForm h2 {
     font-size: 40px;
   }
+  .submitContainer .submit {
+    font-size: 24px;
+    padding: 15px 30px;
+  }
+}
+@media (max-width: 400px) {
+  .contactForm h2 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=contact.module.css.map */
