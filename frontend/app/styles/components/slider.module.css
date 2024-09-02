@@ -31,20 +31,6 @@
 }
 @media (max-width: 450px) {
   .container {
-    height: 7.5vh;
-    margin-top: 50px;
-  }
-  .skill-icon {
-    height: 1.5em;
-  }
-}
-@media (max-width: 370px) {
-  .container {
-    margin-top: 100px;
-  }
-}
-@media (max-width: 340px) {
-  .container {
     visibility: hidden;
   }
 }/*# sourceMappingURL=slider.module.css.map */
