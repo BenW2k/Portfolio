@@ -198,3 +198,26 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .timeline {
+    margin: 75px 15px 75px 15px;
+  }
+  .vertical-line {
+    width: 12px;
+  }
+  .text-box {
+    h2 {
+      font-size: 22px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    small {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

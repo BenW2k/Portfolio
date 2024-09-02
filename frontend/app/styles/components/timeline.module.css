@@ -174,4 +174,24 @@
   .text-box p {
     font-size: 14px;
   }
+}
+@media (max-width: 500px) {
+  .timeline {
+    margin: 75px 15px 75px 15px;
+  }
+  .vertical-line {
+    width: 12px;
+  }
+  .text-box h2 {
+    font-size: 22px;
+  }
+  .text-box h4 {
+    font-size: 16px;
+  }
+  .text-box small {
+    font-size: 14px;
+  }
+  .text-box p {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=timeline.module.css.map */
