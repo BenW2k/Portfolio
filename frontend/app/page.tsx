@@ -59,7 +59,7 @@ export default function Home() {
   }, [isInView]);
 
   return (
-    <div ref={scope}>
+    <div ref={scope} className={styles.container}>
       <div ref={scope} className={styles["hero-section"]}>
         <h1 id="hero-title" className={styles["hero-title"]}>
           Hello
