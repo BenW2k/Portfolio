@@ -102,12 +102,12 @@
 
 .left {
   position: absolute;
-  left: 46.6%;
+  left: 46.2%;
 }
 
 .right {
   position: absolute;
-  left: 50%;
+  left: 49.6%;
 }
 
 @media (max-width: 1300px) {
@@ -173,6 +173,12 @@
   }
   .text-box p {
     font-size: 14px;
+  }
+  .right-side {
+    left: 55%;
+  }
+  .left-side {
+    left: 10%;
   }
 }
 @media (max-width: 500px) {
