@@ -52,11 +52,24 @@
     font-size: 42px;
     margin-left: 20px;
   }
+  .project p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project {
+    padding: 50px 0px 50px 0px;
+  }
+  .project h2 {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 700px) {
   .project h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-left: 30px;
   }
 }
@@ -64,5 +77,23 @@
 @media (max-width: 600px) {
   .project h2 {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .project h2 {
+    font-size: 20px;
+  }
+  .project p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .project h2 {
+    font-size: 16px;
+  }
+  .project p {
+    font-size: 10px;
   }
 }
